@@ -1,0 +1,5 @@
+C:\Temp\XmppBot-for-HipChat-master\Ader.Text\bin\Debug\Ader.Text.dll
+C:\Temp\XmppBot-for-HipChat-master\Ader.Text\bin\Debug\Ader.Text.pdb
+C:\Temp\XmppBot-for-HipChat-master\Ader.Text\obj\Debug\Ader.Text.csprojResolveAssemblyReference.cache
+C:\Temp\XmppBot-for-HipChat-master\Ader.Text\obj\Debug\Ader.Text.dll
+C:\Temp\XmppBot-for-HipChat-master\Ader.Text\obj\Debug\Ader.Text.pdb
