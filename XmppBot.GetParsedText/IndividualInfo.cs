@@ -12,11 +12,11 @@ namespace XmppBot.GetParsedText
         {
         }
 
-        public Individual GetIndividualInfo(string name)
+        public Individual GetIndividualInfo(string id)
         {
             var calendarinfo = new GoogleHandler();
-            var events = calendarinfo.GetCalendarInfo("","","");
-            var individualInfo = new Individual { Name = name };
+            var events = calendarinfo.GetCalendarInfo(id,"","");
+            var individualInfo = new Individual { Name = id };
             individualInfo.Events = new List<CalendarEvent>();
             foreach (var eventItem in events.Items.OrderByDescending(x=>x.Start.Date))
             {
@@ -43,7 +43,15 @@ namespace XmppBot.GetParsedText
                 individualInfo.Events.Add(calendarEvent);
             }
             if (individualInfo.Events.Any(x => x.Busy_From < DateTime.Now))
+            {
                 individualInfo.IsBusyNow = true;
+                var currentEvent = individualInfo.Events.FirstOrDefault(x => x.Busy_From < DateTime.Now && x.Busy_Till >DateTime.Now);
+                individualInfo.Busy_From = currentEvent.Busy_From;
+                individualInfo.Busy_Till = currentEvent.Busy_Till;
+                foreach (var attendee in currentEvent.Attendees)
+                    if (attendee != null)
+                        individualInfo.BusyWith += attendee + "; ";
+            }
             return individualInfo;
         }
     }

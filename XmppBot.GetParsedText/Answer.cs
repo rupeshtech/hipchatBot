@@ -7,6 +7,7 @@ using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using XmppBot.GoogleApi;
 using static XmppBot.GetParsedText.Questions;
 
 namespace XmppBot.GetParsedText
@@ -132,7 +133,11 @@ namespace XmppBot.GetParsedText
 
         private string GetFindIndividualQuery(string name)
         {
-            return JsonConvert.SerializeObject((new IndividualInfo()).GetIndividualInfo(name));
+            var deptResource = new DeptResource();
+            var contacts= DeptResource.ContactList.Where(x => x.Value.ToLower().Contains(name.ToLower()));
+            if (contacts.Count() > 1)
+                return $"I found more {name}";
+            return JsonConvert.SerializeObject((new IndividualInfo()).GetIndividualInfo(contacts.First().Key));
         }
 
         private string GetJiraIssue(string questionVariables)

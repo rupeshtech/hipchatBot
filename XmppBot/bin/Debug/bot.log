@@ -3961,3 +3961,60 @@ ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
 2017-04-15 20:32:26,228 [9] INFO XmppBot.Common.Bot - Connecting...
 2017-04-15 20:32:26,353 [9] INFO XmppBot.Common.Bot - Connected.
 2017-04-15 20:32:38,127 [14] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d600.hipchat.com|5282
+2017-04-15 23:19:32,061 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-15 23:19:32,131 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-04-15 23:19:32,182 [8] INFO XmppBot.Common.Bot - Connected.
+2017-04-15 23:19:58,708 [9] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c610.hipchat.com|5272
+2017-04-15 23:21:58,454 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-15 23:21:58,596 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-15 23:21:58,645 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-15 23:22:08,860 [14] INFO XmppBot.Common.Bot - Message : 4-elmar - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c610.hipchat.com|5272
+2017-04-15 23:22:46,046 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-15 23:22:46,132 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-15 23:22:46,146 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-15 23:22:51,848 [11] INFO XmppBot.Common.Bot - Message : 4-elmar - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c610.hipchat.com|5272
+2017-04-15 23:27:12,489 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-15 23:27:12,578 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-15 23:27:12,628 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-15 23:27:19,245 [10] INFO XmppBot.Common.Bot - Message : 4-elmar - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c610.hipchat.com|5272
+2017-04-15 23:28:14,118 [10] INFO XmppBot.Common.Bot - Message : 4-elmar - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c610.hipchat.com|5272
+2017-04-15 23:29:31,738 [24] INFO XmppBot.Common.Bot - Message : /code
+test - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c610.hipchat.com|5272
+2017-04-15 23:47:26,965 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-15 23:47:27,047 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-04-15 23:47:27,144 [8] INFO XmppBot.Common.Bot - Connected.
+2017-04-15 23:47:32,370 [13] INFO XmppBot.Common.Bot - Message : 4-elmar - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c610.hipchat.com|5272
+2017-04-15 23:49:39,222 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-15 23:49:39,307 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-15 23:49:39,361 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-15 23:49:44,650 [11] INFO XmppBot.Common.Bot - Message : 4-elmar - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c610.hipchat.com|5272

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using XmppBot.GoogleApi;
+using static XmppBot.GoogleApi.DeptResource;
 
 namespace XmppBot.GetParsedText
 {
@@ -13,9 +15,11 @@ namespace XmppBot.GetParsedText
 
         public List<Room> GetAvailableRooms(string city)
         {
+            var ca = new DeptResource();
             List<Room> rooms = new List<Room>();
             if (city.ToLower() == "amsterdam")
             {
+                var roomsList = DeptResource.RoomList.FirstOrDefault(x => x.Key == RoomLocation.Amsterdam).Value;
                 rooms.Add(new Room()
                 {
                     Name = "Big Room"

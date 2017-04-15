@@ -207,7 +207,10 @@ namespace XmppBot.Common
                         case QuestionType.FindIndividualQuery:
                             //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
                             var individualQuery = answer.GetAnswer(QuestionType.FindIndividualQuery, lineParsed.First().Value);
-                            SendMessage(msg.From, $"{individualQuery}", msg.Type);
+                            var individualInfo = JsonConvert.DeserializeObject<Individual>(individualQuery);
+                            var helpTextt = new StringBuilder();
+                            helpTextt.AppendLine($"/code {Environment.NewLine}.{lineParsed.First().Value} is busy");
+                            SendMessage(msg.From, $"{helpTextt}", msg.Type);
                             break;
                         case QuestionType.JiraIssue:
                             //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
