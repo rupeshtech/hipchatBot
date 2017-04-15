@@ -26,3 +26,9 @@ C:\Temp\XmppBot-for-HipChat-master\XmppBot\bin\Debug\RestSharp.xml
 C:\Temp\XmppBot-for-HipChat-master\XmppBot\bin\Debug\HtmlAgilityPack.dll
 C:\Temp\XmppBot-for-HipChat-master\XmppBot\bin\Debug\HtmlAgilityPack.pdb
 C:\Temp\XmppBot-for-HipChat-master\XmppBot\bin\Debug\HtmlAgilityPack.xml
+C:\Users\rupes\Downloads\hipchatBot-master\hipchatBot-master\XmppBot\bin\Debug\XmppBot.Service.exe.config
+C:\Users\rupes\Downloads\hipchatBot-master\hipchatBot-master\XmppBot\obj\x86\Debug\XmppBot.Service.exe
+C:\Users\rupes\Downloads\hipchatBot-master\hipchatBot-master\XmppBot\obj\x86\Debug\XmppBot.Service.pdb
+C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.exe.config
+C:\RupeshDev\Bot\hipchatBot\XmppBot\obj\x86\Debug\XmppBot.Service.exe
+C:\RupeshDev\Bot\hipchatBot\XmppBot\obj\x86\Debug\XmppBot.Service.pdb
