@@ -93,13 +93,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Users\rupes\Downloads\XmppBot-for-HipChat-master\XmppBot-for-HipChat-master\XmppBot.GetParsedText\XmppBot.GetParsedText.csproj">
-      <Project>{585A0A4E-F1F0-462D-A82F-E7468671776B}</Project>
-      <Name>XmppBot.GetParsedText</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Ader.Text\Ader.Text.csproj">
       <Project>{0ab491c1-b7c9-49e7-9ed4-30f2f8677938}</Project>
       <Name>Ader.Text</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XmppBot.GetParsedText\XmppBot.GetParsedText.csproj">
+      <Project>{7fc0973a-c72d-4462-8e6f-0182ec5a2d39}</Project>
+      <Name>XmppBot.GetParsedText</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

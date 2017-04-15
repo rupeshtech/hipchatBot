@@ -3286,3 +3286,560 @@ U zoekt een cola aanbieding? Zoek dan naar de specifieke cola waarvan u de aanbi
 
 2017-04-15 07:46:58,885 [10] INFO XmppBot.Common.Bot - Connecting...
 2017-04-15 07:46:58,944 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-15 08:50:02,857 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-15 08:50:02,936 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-15 08:50:02,964 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-15 08:51:07,273 [14] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 08:51:36,464 [3] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 08:51:39,434 [17] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 08:51:40,066 [15] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 08:52:09,509 [19] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 08:52:11,684 [15] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 08:52:12,515 [19] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 08:52:13,601 [15] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 09:01:58,118 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-15 09:01:58,219 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-15 09:01:58,276 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-15 09:02:04,760 [11] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 09:02:07,722 [14] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 09:02:10,010 [14] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 09:02:10,720 [14] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 09:02:12,091 [10] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 09:03:23,756 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-15 09:03:23,855 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-15 09:03:23,925 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-15 09:03:27,594 [14] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 09:03:30,556 [11] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 09:03:33,050 [10] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 09:03:33,556 [10] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 09:03:35,115 [10] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 09:04:05,826 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-15 09:04:05,924 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-15 09:04:05,945 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-15 09:04:10,723 [11] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 09:04:11,345 [12] ERROR XmppBot.Common.Bot - Exception: System.IO.FileLoadException: Could not load file or assembly 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg)
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+
+=== Pre-bind state information ===
+LOG: DisplayName = Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+ (Fully-specified)
+LOG: Appbase = file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : XmppBot.Common, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\XmppBot.Service.vshost.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Redirect found in application configuration file: 10.0.0.0 redirected to 10.0.0.0.
+LOG: Post-policy reference: Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+LOG: Attempting download of new URL file:///C:/RupeshDev/Bot/hipchatBot/XmppBot/bin/Debug/Newtonsoft.Json.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2017-04-15 09:05:31,134 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-15 09:05:31,219 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-15 09:05:31,271 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-15 09:05:34,785 [14] INFO XmppBot.Common.Bot - Message : ass - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b601.hipchat.com|5252
+2017-04-15 09:06:24,909 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-15 09:06:25,105 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-15 09:06:25,121 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-15 09:06:34,663 [15] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b601.hipchat.com|5252
+2017-04-15 09:07:21,132 [11] INFO XmppBot.Common.Bot - Message : 1- London - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b601.hipchat.com|5252
+2017-04-15 09:07:42,817 [19] INFO XmppBot.Common.Bot - Message : 1-london - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b601.hipchat.com|5252
+2017-04-15 09:12:59,287 [29] INFO XmppBot.Common.Bot - Message : 2- mortgageinfo - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b601.hipchat.com|5252
+2017-04-15 09:13:12,198 [28] INFO XmppBot.Common.Bot - Message : My salary is 50000 euro/year and my age is 35. - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b601.hipchat.com|5252
+2017-04-15 09:13:25,766 [28] INFO XmppBot.Common.Bot - Message : 3-Rotterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b601.hipchat.com|5252
+2017-04-15 09:13:39,684 [32] INFO XmppBot.Common.Bot - Message : 4-Jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b601.hipchat.com|5252
+2017-04-15 09:13:51,933 [32] INFO XmppBot.Common.Bot - Message : 5-Heineken - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b601.hipchat.com|5252

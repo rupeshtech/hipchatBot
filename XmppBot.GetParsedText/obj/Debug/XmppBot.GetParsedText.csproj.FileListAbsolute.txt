@@ -1,0 +1,10 @@
+C:\RupeshDev\Bot\hipchatBot\XmppBot.GetParsedText\obj\Debug\XmppBot.GetParsedText.csprojResolveAssemblyReference.cache
+C:\RupeshDev\Bot\hipchatBot\XmppBot.GetParsedText\bin\Debug\XmppBot.GetParsedText.dll
+C:\RupeshDev\Bot\hipchatBot\XmppBot.GetParsedText\bin\Debug\XmppBot.GetParsedText.pdb
+C:\RupeshDev\Bot\hipchatBot\XmppBot.GetParsedText\bin\Debug\HtmlAgilityPack.dll
+C:\RupeshDev\Bot\hipchatBot\XmppBot.GetParsedText\bin\Debug\Newtonsoft.Json.dll
+C:\RupeshDev\Bot\hipchatBot\XmppBot.GetParsedText\bin\Debug\HtmlAgilityPack.pdb
+C:\RupeshDev\Bot\hipchatBot\XmppBot.GetParsedText\bin\Debug\HtmlAgilityPack.xml
+C:\RupeshDev\Bot\hipchatBot\XmppBot.GetParsedText\bin\Debug\Newtonsoft.Json.xml
+C:\RupeshDev\Bot\hipchatBot\XmppBot.GetParsedText\obj\Debug\XmppBot.GetParsedText.dll
+C:\RupeshDev\Bot\hipchatBot\XmppBot.GetParsedText\obj\Debug\XmppBot.GetParsedText.pdb

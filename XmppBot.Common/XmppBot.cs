@@ -15,6 +15,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using XmppBot.GetParsedText;
+using static XmppBot.GetParsedText.Questions;
 
 namespace XmppBot.Common
 {
