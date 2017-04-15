@@ -208,7 +208,6 @@ namespace XmppBot.Common
                             //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
                             var individualQuery = answer.GetAnswer(QuestionType.FindIndividualQuery, lineParsed.First().Value);
                             SendMessage(msg.From, $"{individualQuery}", msg.Type);
-                            SendMessage(msg.From, $"Above information about {lineParsed.First().Value} is only Test Data. I am waiting for sufficient right on Google Calendar API from Stekker support", msg.Type);
                             break;
                         case QuestionType.JiraIssue:
                             //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);

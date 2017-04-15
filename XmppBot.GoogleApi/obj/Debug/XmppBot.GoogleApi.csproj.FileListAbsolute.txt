@@ -9,11 +9,7 @@ C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\Google.Apis.Core.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\Google.Apis.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\Google.Apis.PlatformServices.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\log4net.dll
-C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\Microsoft.Threading.Tasks.dll
-C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
-C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\Newtonsoft.Json.dll
-C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\System.IO.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\System.Net.Http.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\System.Net.Http.Extensions.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\System.Net.Http.Primitives.dll
@@ -39,7 +35,6 @@ C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\Microsoft.Threading.Task
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\Newtonsoft.Json.xml
-C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\System.IO.xml
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\System.Net.Http.xml
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\System.Net.Http.Extensions.xml
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\System.Net.Http.Primitives.xml

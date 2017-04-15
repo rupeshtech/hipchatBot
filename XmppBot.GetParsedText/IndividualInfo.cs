@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using XmppBot.GoogleApi;
 
 namespace XmppBot.GetParsedText
 {
@@ -13,15 +14,37 @@ namespace XmppBot.GetParsedText
 
         public Individual GetIndividualInfo(string name)
         {
-            return new Individual()
+            var calendarinfo = new GoogleHandler();
+            var events = calendarinfo.GetCalendarInfo("","","");
+            var individualInfo = new Individual { Name = name };
+            individualInfo.Events = new List<CalendarEvent>();
+            foreach (var eventItem in events.Items.OrderByDescending(x=>x.Start.Date))
             {
-                Name = name,
-                IsBusy = true,
-                Busy_Subject = "Retrospective meeting",
-                BusyWith = "Team oxxio",
-                RoomName = "Big Room Ground Floor",
-                Busy_Till = DateTime.Now.AddMinutes(20)
-            };
+                var calendarEvent = new CalendarEvent();
+                var when = eventItem.Start.DateTime;
+                if (when==null || when==DateTime.MinValue || when==DateTime.MaxValue)
+                {
+                    when = Convert.ToDateTime(eventItem.Start.Date);
+                }
+                calendarEvent.Busy_From = eventItem.Start.DateTime==null|| eventItem.Start.DateTime==DateTime.MinValue|| 
+                    eventItem.Start.DateTime==DateTime.MaxValue? Convert.ToDateTime(eventItem.Start.Date) : eventItem.Start.DateTime;
+                calendarEvent.Busy_Till = eventItem.End.DateTime == null || eventItem.End.DateTime == DateTime.MinValue ||
+                    eventItem.End.DateTime == DateTime.MaxValue ? Convert.ToDateTime(eventItem.End.Date) : eventItem.End.DateTime;
+
+                calendarEvent.Busy_Subject = eventItem.Summary;
+                calendarEvent.BusyWith = eventItem.Attendees?.First()?.DisplayName;
+                calendarEvent.Attendees = new List<string>();
+                if (eventItem.Attendees != null)
+                {
+                    foreach (var attendee in eventItem.Attendees)
+                        if(attendee !=null && attendee.DisplayName !=null)
+                        calendarEvent.Attendees.Add(attendee.DisplayName);
+                }
+                individualInfo.Events.Add(calendarEvent);
+            }
+            if (individualInfo.Events.Any(x => x.Busy_From < DateTime.Now))
+                individualInfo.IsBusyNow = true;
+            return individualInfo;
         }
     }
 }

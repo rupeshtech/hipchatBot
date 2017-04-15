@@ -21,7 +21,7 @@ namespace XmppBot.GoogleApi
         {
              
         }
-        public void GetCalendarInfo(string id,string startTime, string endTime)
+        public Events GetCalendarInfo(string id,string startTime, string endTime)
         {
             UserCredential credential;
 
@@ -61,6 +61,7 @@ namespace XmppBot.GoogleApi
             Console.WriteLine("Upcoming events:");
             if (events.Items != null && events.Items.Count > 0)
             {
+                return events;
                 foreach (var eventItem in events.Items)
                 {
                     string when = eventItem.Start.DateTime.ToString();
@@ -71,11 +72,7 @@ namespace XmppBot.GoogleApi
                     Console.WriteLine("{0} ({1})", eventItem.Summary, when);
                 }
             }
-            else
-            {
-                Console.WriteLine("No upcoming events found.");
-            }
-            Console.Read();
+            return null;
 
         }
     }

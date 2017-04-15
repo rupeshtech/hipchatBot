@@ -9,11 +9,15 @@ namespace XmppBot.GetParsedText
     {
         public string Name;
 
-        public bool IsBusy;
+        public bool IsBusyNow;
+
+        public List<CalendarEvent> Events;
 
         public string Busy_Subject;
 
-        public DateTime Busy_Till;
+        public DateTime? Busy_Till;
+
+        public DateTime? Busy_From;
 
         public string RoomName;
 
@@ -25,6 +29,25 @@ namespace XmppBot.GetParsedText
 
         public Individual()
         {
+        }
+    }
+
+    public class CalendarEvent
+    {
+        public string Busy_Subject;
+
+        public DateTime? Busy_Till;
+
+        public DateTime? Busy_From;
+
+        public string RoomName;
+
+        public List<string> Attendees;
+
+        public string BusyWith
+        {
+            get;
+            set;
         }
     }
 }
