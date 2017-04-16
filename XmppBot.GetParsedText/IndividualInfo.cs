@@ -33,12 +33,21 @@ namespace XmppBot.GetParsedText
 
                 calendarEvent.Busy_Subject = eventItem.Summary;
                 calendarEvent.BusyWith = eventItem.Attendees?.First()?.DisplayName;
+                calendarEvent.RoomName = eventItem.Location;
                 calendarEvent.Attendees = new List<string>();
                 if (eventItem.Attendees != null)
                 {
-                    foreach (var attendee in eventItem.Attendees)
-                        if(attendee !=null && attendee.DisplayName !=null)
-                        calendarEvent.Attendees.Add(attendee.DisplayName);
+                    if (eventItem.Attendees.Count<11)
+                    {
+                        foreach (var attendee in eventItem.Attendees)
+                        {
+                            var attendeeName = attendee.DisplayName ?? attendee.Email?.Substring(0, attendee.Email.IndexOf('@'));
+                            if (!string.IsNullOrEmpty(attendeeName) && !attendeeName.ToLower().Contains("room"))
+                                calendarEvent.Attendees.Add(attendeeName);
+                        } 
+                    }
+                    else
+                    calendarEvent.Attendees.Add("more than 10 people");
                 }
                 individualInfo.Events.Add(calendarEvent);
             }
@@ -48,6 +57,7 @@ namespace XmppBot.GetParsedText
                 var currentEvent = individualInfo.Events.FirstOrDefault(x => x.Busy_From < DateTime.Now && x.Busy_Till >DateTime.Now);
                 individualInfo.Busy_From = currentEvent.Busy_From;
                 individualInfo.Busy_Till = currentEvent.Busy_Till;
+                individualInfo.RoomName = currentEvent.RoomName;
                 foreach (var attendee in currentEvent.Attendees)
                     if (attendee != null)
                         individualInfo.BusyWith += attendee + "; ";

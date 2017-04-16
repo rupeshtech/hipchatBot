@@ -145,11 +145,11 @@ namespace XmppBot.Common
                     var greeting = DateTime.Now.Hour<12? "Good Morning": DateTime.Now.Hour < 19?"Good afternoon":"Good evening";
                     SendMessage(msg.From, $"{greeting} {user?.Name}.I am ur lovely bot.I am not human but definitely a depster and Tammo.:)", msg.Type);
                     SendMessage(msg.From, $"I am here to help you. As of nowI have learnt to answer following questions?", msg.Type);
-                    SendMessage(msg.From, $"1) What is the weather in CityName or type: 1-CityName", msg.Type);
-                    SendMessage(msg.From, $"2) How much can I take loan or type: 2-mortgage", msg.Type);
-                    SendMessage(msg.From, $"3) What is available room in Amsterdam or type: 3-Amsterdam", msg.Type);
-                    SendMessage(msg.From, $"4) Where is X busy? or what is X doing or type 4-Rupesh", msg.Type);
-                    SendMessage(msg.From, $"5) Compare price Bier? or Prijs Heineken or typr 5-tomat", msg.Type);
+                    SendMessage(msg.From, $"1) Please type: 1-Amsterdam or Availabe room in Amsterdam?", msg.Type);
+                    SendMessage(msg.From, $"2) Please type: 1-Rupesh or Where is Rupesh busy or What is Rupesh doing?", msg.Type);
+                    SendMessage(msg.From, $"3) Please type: 3-London or Weather in Washinton?", msg.Type);
+                    SendMessage(msg.From, $"4) Please type: 4-MortageInfo or How much can I take loan?", msg.Type);
+                    SendMessage(msg.From, $"5) Please type: 5-Heineken or Compare price Bier? or Prijs Heineken?", msg.Type); ;
                 }
                 else if(!line.Command.Contains("<p>"))
                 {
@@ -165,21 +165,6 @@ namespace XmppBot.Common
                     }
                 }
                 var answer = new Answer();
-                
-                //        var plist = Plugins.ToList();
-                //        plist.Sort((c1, c2) => c1.Name.CompareTo(c2.Name));
-
-                //        foreach (var p in plist)
-                //        {
-                //            var helpLine = p.Help(line);
-                //            if (!String.IsNullOrWhiteSpace(helpLine))
-                //            {
-                //                helpText.AppendLine(p.Help(line));
-                //            }
-                //        }
-
-                //        helpText.AppendLine("-----------------------");
-                //        helpText.AppendLine("En/Dis-able a plugin: !disable|!enable <pluginname>");
                 if (lineParsed !=null && !line.Command.Contains("<p>"))
                 {
                     switch(lineParsed.First().Key)
@@ -200,16 +185,53 @@ namespace XmppBot.Common
                             break;
                         case QuestionType.RoomQuery:
                             //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
-                            var roomQueryAnster = answer.GetAnswer(QuestionType.RoomQuery, lineParsed.First().Value);
-                            SendMessage(msg.From, $"{roomQueryAnster}", msg.Type);
-                            SendMessage(msg.From, $"Above availabe rooms are only Test Data. I am waiting for sufficient right on Google Calendar API from Stekker support", msg.Type);
+                            var roomQueryAnswer = answer.GetAnswer(QuestionType.RoomQuery, lineParsed.First().Value);
+                            if(roomQueryAnswer.Contains("Please specify office location."))
+                            {
+                                SendMessage(msg.From, $"{roomQueryAnswer}", msg.Type);
+                                break;
+                            }
+                            var helpTexttt = new StringBuilder();
+                            var rooms = JsonConvert.DeserializeObject<List<Room>>(roomQueryAnswer);
+                            if (rooms.Count == 0 || rooms.All(x => string.IsNullOrEmpty(x.Name)))
+                                helpTexttt.AppendLine($"/code {Environment.NewLine}No room available now at {lineParsed.First().Value}");
+                            else
+                            {
+                                SendMessage(msg.From, $"Available rooms in {lineParsed.First().Value} for next 15 minutes are as follows", msg.Type);
+                                helpTexttt.AppendLine($"/code");
+                                foreach (var room in rooms)
+                                    helpTexttt.AppendLine($"{room.Name}");
+                            }
+                            SendMessage(msg.From, $"{helpTexttt}", msg.Type);
                             break;
                         case QuestionType.FindIndividualQuery:
                             //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
                             var individualQuery = answer.GetAnswer(QuestionType.FindIndividualQuery, lineParsed.First().Value);
-                            var individualInfo = JsonConvert.DeserializeObject<Individual>(individualQuery);
                             var helpTextt = new StringBuilder();
-                            helpTextt.AppendLine($"/code {Environment.NewLine}.{lineParsed.First().Value} is busy");
+                            if (individualQuery.Contains("More than one"))
+                            {
+                                var list = individualQuery.Substring(individualQuery.IndexOf("found.")+6);
+                                var foundList = list.Split(',');
+                                helpTextt.AppendLine($"/code {Environment.NewLine}More than one {lineParsed.First().Value} found. Who are you lokinh for {list}");
+                                SendMessage(msg.From, $"{helpTextt}", msg.Type);
+                                break;
+                            }
+                            if (individualQuery.Contains("Couldn't find any"))
+                            {
+                                helpTextt.AppendLine($"/code {Environment.NewLine} {individualQuery} ");
+                                SendMessage(msg.From, $"{helpTextt}", msg.Type);
+                                break;
+                            }
+                            var individualInfo = JsonConvert.DeserializeObject<Individual>(individualQuery);
+
+                            if (individualInfo.IsBusyNow)
+                            {
+                                helpTextt.AppendLine($"/code {Environment.NewLine}{lineParsed.First().Value} is busy now. Till {individualInfo.Busy_Till}.In {individualInfo.RoomName}");
+                                if(!individualInfo.BusyWith.Contains("more than"))
+                                helpTextt.Append($"With{individualInfo.BusyWith}");
+                            }
+                            else
+                                helpTextt.AppendLine($"/code {Environment.NewLine}{lineParsed.First().Value} is free now. His next meeting is {individualInfo.Events.FirstOrDefault().Busy_From}  at {individualInfo.Events.FirstOrDefault().RoomName}");
                             SendMessage(msg.From, $"{helpTextt}", msg.Type);
                             break;
                         case QuestionType.JiraIssue:
@@ -224,11 +246,11 @@ namespace XmppBot.Common
                             var products = JsonConvert.DeserializeObject<List<Product>>(priceQuery);
                             if (products.Count == 0) {
                                 SendMessage(msg.From, $" Sorry currently i can't find price of {lineParsed.First().Value}!. Please try dutch names.!", msg.Type);
-                                SendMessage(msg.From, $"1) What is the weather in CityName or type: 1-CityName", msg.Type);
-                                SendMessage(msg.From, $"2) How much can I take loan or type 2-mortgage", msg.Type);
-                                SendMessage(msg.From, $"3) What is available room in Amsterdam or type 3-Amsterdam", msg.Type);
-                                SendMessage(msg.From, $"4) Where is X busy? or what is X doing or type 4-Rupesh", msg.Type);
-                                SendMessage(msg.From, $"5) Compare price Bier? or Prijs Heineken or type 5-tomat", msg.Type);
+                                SendMessage(msg.From, $"1) Please type: 1-Amsterdam or Availabe room in Amsterdam?", msg.Type);
+                                SendMessage(msg.From, $"2) Please type: 1-Rupesh or Where is Rupesh busy or What is Rupesh doing?", msg.Type);
+                                SendMessage(msg.From, $"3) Please type: 3-London or Weather in Washinton?", msg.Type);
+                                SendMessage(msg.From, $"4) Please type: 4-MortageInfo or How much can I take loan?", msg.Type);
+                                SendMessage(msg.From, $"5) Please type: 5-Heineken or Compare price Bier? or Prijs Heineken?", msg.Type);
                             }
                             foreach(var product in products.OrderByDescending(p=>p.Discount).Take(5))
                             {
@@ -247,11 +269,11 @@ namespace XmppBot.Common
                             SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
                             SendMessage(msg.From, $" Sorry currently i can't help you with that!!!", msg.Type);
                             SendMessage(msg.From, $"you can also ask me following questions", msg.Type);
-                            SendMessage(msg.From, $"1) What is the weather in CityName or type: 1-CityName", msg.Type);
-                            SendMessage(msg.From, $"2) How much can I take loan or type 2-mortgage", msg.Type);
-                            SendMessage(msg.From, $"3) What is available room in Amsterdam or type 3-Amsterdam", msg.Type);
-                            SendMessage(msg.From, $"4) Where is X busy? or what is X doing or type 4-Rupesh", msg.Type);
-                            SendMessage(msg.From, $"5) Compare price Bier? or Prijs Heineken or type 5-tomat", msg.Type);
+                            SendMessage(msg.From, $"1) Please type: 1-Amsterdam or Availabe room in Amsterdam?", msg.Type);
+                            SendMessage(msg.From, $"2) Please type: 1-Rupesh or Where is Rupesh busy or What is Rupesh doing?", msg.Type);
+                            SendMessage(msg.From, $"3) Please type: 3-London or Weather in Washinton?", msg.Type);
+                            SendMessage(msg.From, $"4) Please type: 4-MortageInfo or How much can I take loan?", msg.Type);
+                            SendMessage(msg.From, $"5) Please type: 5-Heineken or Compare price Bier? or Prijs Heineken?", msg.Type);
                             break;
 
                     }

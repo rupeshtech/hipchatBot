@@ -17,11 +17,43 @@ namespace XmppBot.GoogleApi
     {
         public string[] Scopes = { CalendarService.Scope.CalendarReadonly };
         public const string ApplicationName = "CalendarDept";
+        private static CalendarService _service;
         public GoogleHandler()
         {
-             
+            _service = _service ?? GetCalendarService();
+        }
+        public FreeBusyResponse GetAvailableRoomsInfo(List<string> roomIds, string startTime, string endTime)
+        {
+            FreeBusyRequest freeBusyRequest = new FreeBusyRequest();
+            freeBusyRequest.TimeMin = DateTime.Now;
+            freeBusyRequest.TimeMax = DateTime.Now.AddMinutes(15);
+            freeBusyRequest.Items = new List<FreeBusyRequestItem>();
+            foreach (var roomId in roomIds)
+                freeBusyRequest.Items.Add(new FreeBusyRequestItem { Id = roomId });
+            var request = _service.Freebusy.Query(freeBusyRequest);
+
+            var events = request.Execute();
+            return events;
+
         }
         public Events GetCalendarInfo(string id,string startTime, string endTime)
+        {
+            EventsResource.ListRequest request = _service.Events.List(id);
+            request.TimeMin = DateTime.Now;
+            request.ShowDeleted = false;
+            request.SingleEvents = true;
+            request.MaxResults = 10;
+            request.OrderBy = EventsResource.ListRequest.OrderByEnum.StartTime;
+
+            // List events.
+            Events events = request.Execute();
+            if (events.Items != null && events.Items.Count > 0)
+                return events;
+            return null;
+
+        }
+
+        private CalendarService GetCalendarService()
         {
             UserCredential credential;
 
@@ -38,7 +70,6 @@ namespace XmppBot.GoogleApi
                     "bot@deptagency.com",
                     CancellationToken.None,
                     new FileDataStore(credPath, true)).Result;
-                Console.WriteLine("Credential file saved to: " + credPath);
             }
 
             // Create Google Calendar API service.
@@ -47,33 +78,7 @@ namespace XmppBot.GoogleApi
                 HttpClientInitializer = credential,
                 ApplicationName = ApplicationName,
             });
-
-            // Define parameters of request.
-            EventsResource.ListRequest request = service.Events.List("jasper@tamtam.nl");//("deptagency.com_3338303536333337353638@resource.calendar.google.com");
-            request.TimeMin = DateTime.Now;
-            request.ShowDeleted = false;
-            request.SingleEvents = true;
-            request.MaxResults = 10;
-            request.OrderBy = EventsResource.ListRequest.OrderByEnum.StartTime;
-
-            // List events.
-            Events events = request.Execute();
-            Console.WriteLine("Upcoming events:");
-            if (events.Items != null && events.Items.Count > 0)
-            {
-                return events;
-                foreach (var eventItem in events.Items)
-                {
-                    string when = eventItem.Start.DateTime.ToString();
-                    if (String.IsNullOrEmpty(when))
-                    {
-                        when = eventItem.Start.Date;
-                    }
-                    Console.WriteLine("{0} ({1})", eventItem.Summary, when);
-                }
-            }
-            return null;
-
+            return service;
         }
     }
 }

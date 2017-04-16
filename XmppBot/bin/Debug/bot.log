@@ -4018,3 +4018,530 @@ test - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c610.hipchat.
 2017-04-15 23:49:39,307 [9] INFO XmppBot.Common.Bot - Connecting...
 2017-04-15 23:49:39,361 [9] INFO XmppBot.Common.Bot - Connected.
 2017-04-15 23:49:44,650 [11] INFO XmppBot.Common.Bot - Message : 4-elmar - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c610.hipchat.com|5272
+2017-04-16 08:09:03,935 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:09:04,099 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:09:04,192 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:09:23,576 [15] INFO XmppBot.Common.Bot - Message : 4-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:11:07,707 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:11:07,791 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:11:07,846 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:11:20,083 [11] INFO XmppBot.Common.Bot - Message : 4-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:14:13,565 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:14:13,651 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:14:13,705 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:14:20,616 [14] INFO XmppBot.Common.Bot - Message : 4-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:15:16,715 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:15:16,796 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:15:16,852 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:15:23,106 [11] INFO XmppBot.Common.Bot - Message : 4-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:19:28,408 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:19:28,495 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:19:28,547 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:19:34,294 [11] INFO XmppBot.Common.Bot - Message : 4-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:20:09,518 [19] INFO XmppBot.Common.Bot - Message : 4-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:20:54,319 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:20:54,413 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:20:54,466 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:21:10,989 [15] INFO XmppBot.Common.Bot - Message : 4-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:26:57,689 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:26:57,773 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:26:57,834 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:27:04,036 [11] INFO XmppBot.Common.Bot - Message : 4-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:29:02,750 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:29:02,833 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:29:02,882 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:29:08,108 [11] INFO XmppBot.Common.Bot - Message : 4-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:31:17,352 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:31:17,433 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:31:17,466 [8] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:31:22,139 [10] INFO XmppBot.Common.Bot - Message : 4-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:32:00,054 [19] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:37:22,371 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:37:22,471 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:37:22,518 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:37:27,521 [11] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:38:13,241 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:38:13,353 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:38:13,367 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:38:16,917 [14] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:38:47,083 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:38:47,174 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:38:47,216 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:38:52,966 [14] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:40:17,759 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:40:17,842 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:40:17,898 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:40:22,221 [11] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:41:09,424 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:41:09,509 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:41:09,521 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:41:13,297 [11] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:41:31,140 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:41:31,223 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:41:31,284 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:41:34,485 [15] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:42:09,062 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:42:09,163 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:42:09,175 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:42:14,908 [10] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:42:49,769 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:42:49,849 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:42:49,895 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:42:54,448 [10] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:44:55,874 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:44:55,965 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:44:56,010 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:45:00,469 [10] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:45:18,594 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:45:18,678 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:45:18,693 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:45:22,501 [11] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:48:15,241 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:48:15,337 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:48:15,392 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:48:21,794 [10] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:48:52,143 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:48:52,230 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:48:52,241 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:48:55,965 [12] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:49:39,027 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:49:39,106 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:49:39,136 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:49:43,043 [11] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:50:03,492 [10] INFO XmppBot.Common.Bot - Message : 4- Jasper Blijenberg - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:50:51,685 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:50:51,767 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:50:51,819 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:50:56,554 [14] INFO XmppBot.Common.Bot - Message : 4-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:51:10,824 [11] INFO XmppBot.Common.Bot - Message : 4- jasper   jansen - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:52:58,138 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:52:58,227 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:52:58,274 [8] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 08:53:16,799 [13] INFO XmppBot.Common.Bot - Message : 4- jasper  jansen - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b604.hipchat.com|5232
+2017-04-16 08:55:04,578 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 08:55:04,680 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 08:55:04,732 [8] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 10:15:47,539 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 10:15:47,610 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 10:15:47,675 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 10:16:10,354 [14] INFO XmppBot.Common.Bot - Message : 4-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d612.hipchat.com|5282
+2017-04-16 10:24:16,441 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 10:24:16,537 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 10:24:16,593 [8] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 10:24:23,725 [9] INFO XmppBot.Common.Bot - Message : 4-dimi - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d612.hipchat.com|5282
+2017-04-16 10:44:28,882 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 10:44:28,979 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 10:44:29,037 [8] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 10:44:39,413 [9] INFO XmppBot.Common.Bot - Message : 4-bart - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d612.hipchat.com|5282
+2017-04-16 10:44:55,694 [10] INFO XmppBot.Common.Bot - Message : 4- bart manuel - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d612.hipchat.com|5282
+2017-04-16 10:45:54,489 [13] INFO XmppBot.Common.Bot - Message : 4- samdor - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d612.hipchat.com|5282
+2017-04-16 13:50:29,887 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 13:50:29,998 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 13:50:30,059 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 13:50:53,191 [11] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b611.hipchat.com|5252
+2017-04-16 13:58:16,538 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 13:58:16,628 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 13:58:16,684 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 13:58:24,157 [14] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b611.hipchat.com|5252
+2017-04-16 13:59:13,200 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 13:59:13,299 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 13:59:13,316 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 13:59:22,217 [10] INFO XmppBot.Common.Bot - Message : 3-amsterdam
+ - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b611.hipchat.com|5252
+2017-04-16 14:00:20,748 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 14:00:20,848 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 14:00:20,899 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 14:00:27,102 [14] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b611.hipchat.com|5252
+2017-04-16 14:01:45,676 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 14:01:45,756 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 14:01:45,853 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 14:01:51,415 [10] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b611.hipchat.com|5252
+2017-04-16 14:11:37,658 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 14:11:37,763 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 14:11:37,832 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 14:12:12,835 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 14:12:12,922 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 14:12:12,937 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 14:12:22,404 [11] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b611.hipchat.com|5252
+2017-04-16 14:45:18,434 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 14:45:18,507 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 14:45:18,540 [8] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 14:45:36,991 [10] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 14:45:56,463 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 14:45:56,536 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 14:45:56,549 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 14:46:03,370 [12] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 14:46:25,239 [15] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 14:46:41,969 [20] INFO XmppBot.Common.Bot - Message : 
+3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 14:46:50,257 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 14:46:50,340 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 14:46:50,399 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 14:47:14,183 [10] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 14:48:00,501 [22] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 14:49:53,794 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 14:49:53,859 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 14:49:53,892 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 14:49:59,184 [12] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:01:59,248 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:01:59,320 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:01:59,353 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:02:05,419 [11] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:04:15,168 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:04:15,239 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:04:15,297 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:04:20,363 [11] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:06:00,996 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:06:01,076 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:06:01,141 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:06:05,870 [11] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:06:33,853 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:06:33,928 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:06:33,944 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:06:41,679 [11] INFO XmppBot.Common.Bot - Message : 3-amsterdam
+ - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:07:45,666 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:07:45,760 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:07:45,798 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:07:50,306 [14] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:08:59,094 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:08:59,185 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:08:59,227 [8] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:09:04,040 [9] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:09:26,779 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:09:26,865 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:09:26,878 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:09:33,155 [15] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:10:45,219 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:10:45,294 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:10:45,328 [8] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:10:49,919 [9] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:11:00,698 [17] INFO XmppBot.Common.Bot - Message : 3-rotterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:11:34,088 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:11:34,163 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:11:34,177 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:11:42,146 [14] INFO XmppBot.Common.Bot - Message : 3-manchester - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:13:31,507 [21] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:14:15,373 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:14:15,462 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:14:15,498 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:14:23,875 [10] INFO XmppBot.Common.Bot - Message : 3-amsterdam
+ - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:15:06,404 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:15:06,496 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:15:06,512 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:15:12,124 [10] INFO XmppBot.Common.Bot - Message : 3-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:28:00,557 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:28:00,639 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:28:00,687 [8] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:28:15,655 [9] INFO XmppBot.Common.Bot - Message : hi - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:29:13,757 [13] INFO XmppBot.Common.Bot - Message : 1-amsterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:29:38,538 [20] INFO XmppBot.Common.Bot - Message : hi - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:29:52,780 [20] INFO XmppBot.Common.Bot - Message : 1-Rotterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:30:14,559 [16] INFO XmppBot.Common.Bot - Message : 1-Rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:30:21,972 [16] ERROR XmppBot.Common.Bot - Exception: Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: P. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at XmppBot.Common.Bot.xmpp_OnMessage(Object sender, Message msg) in C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\XmppBot.cs:line 205
+   at agsXMPP.protocol.client.MessageHandler.Invoke(Object sender, Message msg)
+   at agsXMPP.XmppClientConnection.StreamParserOnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+2017-04-16 15:30:32,773 [20] INFO XmppBot.Common.Bot - Message : 2-Rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:32:25,865 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:32:25,972 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:32:26,031 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:32:29,548 [14] INFO XmppBot.Common.Bot - Message : 1-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:33:33,160 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:33:33,254 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:33:33,305 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:33:44,710 [10] INFO XmppBot.Common.Bot - Message : 2-kutti - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:36:45,703 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-16 15:36:45,780 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-16 15:36:45,834 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-16 15:36:51,896 [11] INFO XmppBot.Common.Bot - Message : 2-kutti - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:37:06,539 [11] INFO XmppBot.Common.Bot - Message : 2-motu - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:37:11,863 [16] INFO XmppBot.Common.Bot - Message : 2-jasper - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:37:26,710 [16] INFO XmppBot.Common.Bot - Message : Jasper Blijenberg - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:37:32,344 [16] INFO XmppBot.Common.Bot - Message : 2-individualQuery - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:37:42,280 [17] INFO XmppBot.Common.Bot - Message : 2-Jasper Blijenberg - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:38:22,110 [22] INFO XmppBot.Common.Bot - Message : 3-london - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:38:33,886 [22] INFO XmppBot.Common.Bot - Message : 3-new york - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:38:40,025 [17] INFO XmppBot.Common.Bot - Message : 3-london - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232
+2017-04-16 15:38:45,253 [17] INFO XmppBot.Common.Bot - Message : 3-London - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c606.hipchat.com|5232

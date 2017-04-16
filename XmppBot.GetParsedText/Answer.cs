@@ -133,11 +133,16 @@ namespace XmppBot.GetParsedText
 
         private string GetFindIndividualQuery(string name)
         {
+            name = name.Trim();
+            Regex regex = new Regex("[ ]{2,}", RegexOptions.IgnoreCase);
+            name = regex.Replace(name, " ");
             var deptResource = new DeptResource();
             var contacts= DeptResource.ContactList.Where(x => x.Value.ToLower().Contains(name.ToLower()));
             if (contacts.Count() > 1)
-                return $"I found more {name}";
-            return JsonConvert.SerializeObject((new IndividualInfo()).GetIndividualInfo(contacts.First().Key));
+                return $"More than one {name} found.{JsonConvert.SerializeObject(contacts.Select(x=>x.Value).ToList())}";
+            if(contacts==null|| contacts.Count()==0)
+                return $"Couldn't find any {name}";
+            return JsonConvert.SerializeObject((new IndividualInfo()).GetIndividualInfo(contacts?.First().Key));
         }
 
         private string GetJiraIssue(string questionVariables)
@@ -160,7 +165,7 @@ namespace XmppBot.GetParsedText
             }
             else
             {
-                str = "Please specify office location. For ex: Available rooms in Amsterdam.";
+                str = "Please specify office location.For ex: Amsterdam";
             }
             return str;
         }

@@ -38,19 +38,19 @@ namespace XmppBot.GetParsedText
                     {
                         if (questionNumberInt == 1)
                         {
-                            questionType = QuestionType.Weather;
+                            questionType = QuestionType.RoomQuery;
                         }
                         else if (questionNumberInt == 2)
                         {
-                            questionType = QuestionType.MortgageInfo;
+                            questionType = QuestionType.FindIndividualQuery;
                         }
                         else if (questionNumberInt == 3)
                         {
-                            questionType = QuestionType.RoomQuery;
+                            questionType = QuestionType.Weather;
                         }
                         else if (questionNumberInt == 4)
                         {
-                            questionType = QuestionType.FindIndividualQuery;
+                            questionType = QuestionType.MortgageInfo;
                         }
                         else
                         {
