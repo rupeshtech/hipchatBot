@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DeptBotModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Schedule">
+    <Key>
+      <PropertyRef Name="ScheduleId" />
+    </Key>
+    <Property Name="ScheduleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IntHour" Type="Int32" Nullable="false" />
+    <Property Name="DayType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserReminders" Relationship="Self.FK_UserReminder_Schedule" FromRole="Schedule" ToRole="UserReminder" />
+  </EntityType>
+  <EntityType Name="UserReminder">
+    <Key>
+      <PropertyRef Name="UserScheduleId" />
+      <PropertyRef Name="ScheduleId" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="ReminderMessages" />
+    </Key>
+    <Property Name="UserScheduleId" Type="Int32" Nullable="false" />
+    <Property Name="ScheduleId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ReminderMessages" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Schedule" Relationship="Self.FK_UserReminder_Schedule" FromRole="UserReminder" ToRole="Schedule" />
+  </EntityType>
+  <Association Name="FK_UserReminder_Schedule">
+    <End Role="Schedule" Type="Self.Schedule" Multiplicity="1" />
+    <End Role="UserReminder" Type="Self.UserReminder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Schedule">
+        <PropertyRef Name="ScheduleId" />
+      </Principal>
+      <Dependent Role="UserReminder">
+        <PropertyRef Name="ScheduleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DeptBotEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Schedules" EntityType="Self.Schedule" />
+    <EntitySet Name="UserReminders" EntityType="Self.UserReminder" />
+    <AssociationSet Name="FK_UserReminder_Schedule" Association="Self.FK_UserReminder_Schedule">
+      <End Role="Schedule" EntitySet="Schedules" />
+      <End Role="UserReminder" EntitySet="UserReminders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

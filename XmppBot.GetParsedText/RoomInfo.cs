@@ -15,20 +15,45 @@ namespace XmppBot.GetParsedText
 
         public List<Room> GetAvailableRooms(string city)
         {
+            city = city.Replace(" ","");
+            var cityToSearch = city.Split('-').First();
+            var typeOfSearch = city.Split('-').Last();
+            int timeMax = 15;
+            switch(typeOfSearch.ToLower())
+            {
+                case "quick":
+                    timeMax = 10;
+                    break;
+                case "short":
+                    timeMax = 30;
+                    break;
+                case "medium":
+                    timeMax = 60;
+                    break;
+                case "long":
+                    timeMax = 90;
+                    break;
+                default:
+                    timeMax = 15;
+                    break;
+            }
             var ca = new DeptResource();
             var roomHandler = new GoogleHandler();
             List<KeyValuePair<string, string>> roomsList = new List<KeyValuePair<string, string>>();
-            if (city.ToLower() == "amsterdam")
+            if (cityToSearch.ToLower() == "amsterdam")
                 roomsList = DeptResource.RoomList.FirstOrDefault(x => x.Key == RoomLocation.Amsterdam).Value;
-            else if (city.ToLower() == "rotterdam")
+            else if (cityToSearch.ToLower() == "rotterdam")
                 roomsList = DeptResource.RoomList.FirstOrDefault(x => x.Key == RoomLocation.Rotterdam).Value;
-            else if (city.ToLower() == "manchester")
+            else if (cityToSearch.ToLower() == "manchester")
                 roomsList = DeptResource.RoomList.FirstOrDefault(x => x.Key == RoomLocation.Manchester).Value;
 
-            var roomsInfo = roomHandler.GetAvailableRoomsInfo(roomsList.Select(x => x.Key).ToList(), "", "");
+            var roomsInfo = roomHandler.GetAvailableRoomsInfo(roomsList.Select(x => x.Key).ToList(), "", timeMax);
+            if (roomsInfo.Calendars == null) return null;
+            var unavailableRooms = roomsInfo.Calendars.Where(x => x.Value.Busy.Count != 0).Select(x => x.Key).ToList();
 
             var availableRooms = roomsInfo.Calendars.Where(x => x.Value.Busy.Count == 0).Select(x => x.Key);
             var rooms = roomsList.Where(x => availableRooms.Contains(x.Key)).Select(r => new Room { Name = r.Value }).ToList();
+            var roomss = roomsList.Where(x => unavailableRooms.Contains(x.Key)).Select(r => new Room { Name = r.Value }).ToList();
             return rooms;
         }
     }

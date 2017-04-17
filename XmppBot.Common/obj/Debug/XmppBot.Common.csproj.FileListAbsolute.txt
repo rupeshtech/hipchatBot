@@ -70,3 +70,5 @@ C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Google.Apis.Core.pdb
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Google.Apis.Core.xml
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Google.Apis.pdb
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Google.Apis.xml
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\EntityFramework.dll
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\EntityFramework.xml

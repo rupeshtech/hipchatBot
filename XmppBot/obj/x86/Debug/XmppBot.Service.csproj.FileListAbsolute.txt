@@ -77,3 +77,7 @@ C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\Google.Apis.Core.pdb
 C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\Google.Apis.Core.xml
 C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\Google.Apis.pdb
 C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\Google.Apis.xml
+C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\EntityFramework.dll
+C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\EntityFramework.xml
+C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\EntityFramework.SqlServer.dll
+C:\RupeshDev\Bot\hipchatBot\XmppBot\bin\Debug\EntityFramework.SqlServer.xml

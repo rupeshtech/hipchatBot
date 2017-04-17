@@ -8,15 +8,15 @@ namespace XmppBot.Common
 {
     public class ChatUser : IChatUser
     {
-        public string Name { get; private set; }
+        public string Name { get;  set; }
 
-        public string Id { get; private set; }
+        public string Id { get;  set; }
 
-        public string Bare { get; private set; }
+        public string Bare { get;  set; }
 
-        public string Mention { get; private set; }
+        public string Mention { get;  set; }
 
-        private ChatUser()
+        public ChatUser()
         {
             this.Name = string.Empty;
             this.Id = string.Empty;

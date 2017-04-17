@@ -13,6 +13,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using XmppBot.GetParsedText;
 using static XmppBot.GetParsedText.Questions;
@@ -42,7 +43,7 @@ namespace XmppBot.Common
         public void Stop()
         {
         }
-
+        private Timer _schedular;
         public void Start()
         {
             AppDomain.CurrentDomain.AssemblyResolve += (o, args) =>
@@ -86,6 +87,7 @@ namespace XmppBot.Common
 
             _client.OnRosterStart += new ObjectHandler(_client_OnRosterStart);
             _client.OnRosterItem += new XmppClientConnection.RosterHandler(_client_OnRosterItem);
+            //ScheduleService();
         }
 
         #region Xmpp Events
@@ -102,7 +104,35 @@ namespace XmppBot.Common
                 mucManager.JoinRoom(jid, _config.RoomNick);
             }
         }
+        public void ScheduleService()
+        {
+            try
+            {
+                _schedular = new Timer(new TimerCallback(SchedularCallback));
+                var scheduledTime = GetNextScheduleTime();
+                var timeSpan = scheduledTime.Subtract(DateTime.Now);
+                var dueTime = Convert.ToInt32(timeSpan.TotalMilliseconds);
 
+                _schedular.Change(dueTime, Timeout.Infinite);
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+        private DateTime GetNextScheduleTime()
+        {
+            DateTime scheduledTime;
+            var parser = new LineParser();
+            int nextRunTime=parser.GetScheduleTime();
+            scheduledTime = DateTime.Parse($"{nextRunTime}:00");
+            return scheduledTime;
+        }
+
+        private void SchedularCallback(object e)
+        {
+            Jid botUser = new Jid("94767_4717350@chat.hipchat.com");
+            xmpp_OnMessage(null, new Message { Body="Remember to fill hours",From=botUser,Type= MessageType.chat});
+        }
         private void xmpp_OnMessage(object sender, Message msg)
         {
             if (!string.IsNullOrEmpty(msg.Body))
@@ -121,14 +151,20 @@ namespace XmppBot.Common
                 }
                 else
                 {
-                    _roster.TryGetValue(msg.From.Bare, out user);
+                    if (msg.Body.Contains("Remember"))
+                        user = new ChatUser { Id="94767_4717350",Bare= "94767_4717350@chat.hiptchat.com" };
+                    else
+                        _roster.TryGetValue(msg.From.Bare, out user);
                 }
 
                 // we can't find a user or this is the bot talking
                 if (null == user || _config.RoomNick == user.Name)
                     return;
-
-                ParsedLine line = new ParsedLine(msg.From.Bare, msg.Body.Trim(), msg.From.User, user, (BotMessageType) msg.Type);
+                ParsedLine line;
+                if (msg.Body.Contains("Remember"))
+                    line = new ParsedLine(msg.From.Bare, msg.Body.Trim(), msg.From.User, user, (BotMessageType)msg.Type);
+                else
+                    line = new ParsedLine(msg.From.Bare, msg.Body.Trim(), msg.From.User, user, (BotMessageType)msg.Type);
                 Dictionary<QuestionType,string> lineParsed = null;
                 //Regex.IsMatch(text, "\\bthe\\b", RegexOptions.IgnoreCase)
                 if (Regex.IsMatch(line.Command, "\\bhi\\b", RegexOptions.IgnoreCase) ||
@@ -144,7 +180,7 @@ namespace XmppBot.Common
                 {
                     var greeting = DateTime.Now.Hour<12? "Good Morning": DateTime.Now.Hour < 19?"Good afternoon":"Good evening";
                     SendMessage(msg.From, $"{greeting} {user?.Name}.I am ur lovely bot.I am not human but definitely a depster and Tammo.:)", msg.Type);
-                    SendMessage(msg.From, $"I am here to help you. As of nowI have learnt to answer following questions?", msg.Type);
+                    SendMessage(msg.From, $"I am here to help you. As of now I have learnt to answer following questions?", msg.Type);
                     SendMessage(msg.From, $"1) Please type: 1-Amsterdam or Availabe room in Amsterdam?", msg.Type);
                     SendMessage(msg.From, $"2) Please type: 1-Rupesh or Where is Rupesh busy or What is Rupesh doing?", msg.Type);
                     SendMessage(msg.From, $"3) Please type: 3-London or Weather in Washinton?", msg.Type);
@@ -155,8 +191,15 @@ namespace XmppBot.Common
                 {
                     try
                     {
+                        _schedular = new Timer(new TimerCallback(SchedularCallback));
                         var parser = new LineParser();
-                        lineParsed = parser.ParseLine(line.Command, line.Raw);
+                        if (msg.Body.Contains("Remember")) {
+                            Dictionary<QuestionType, string> questionTypes= new Dictionary<QuestionType, string>();
+                            questionTypes.Add(QuestionType.ReminderHour, "");
+                            lineParsed = questionTypes;
+                    }
+                        else
+                            lineParsed = parser.ParseLine(line.Command, line.Raw,user.Id);
                     }
                     catch (Exception ex)
                     {
@@ -193,7 +236,7 @@ namespace XmppBot.Common
                             }
                             var helpTexttt = new StringBuilder();
                             var rooms = JsonConvert.DeserializeObject<List<Room>>(roomQueryAnswer);
-                            if (rooms.Count == 0 || rooms.All(x => string.IsNullOrEmpty(x.Name)))
+                            if (rooms==null || rooms.Count == 0 || rooms.All(x => string.IsNullOrEmpty(x.Name)))
                                 helpTexttt.AppendLine($"/code {Environment.NewLine}No room available now at {lineParsed.First().Value}");
                             else
                             {
@@ -238,7 +281,10 @@ namespace XmppBot.Common
                             //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
                             var jiraQuery = answer.GetAnswer(QuestionType.JiraIssue, user.Name);
                             SendMessage(msg.From, $"{jiraQuery}", msg.Type);
-                            SendMessage(msg.From, $"Above information about {lineParsed.First().Value} is only Test Data. I am waiting for sufficient right on Google Calendar API from Stekker support", msg.Type);
+                            break;
+                        case QuestionType.ReminderHour:
+                            //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
+                            SendMessage(msg.From, $"hi", msg.Type);
                             break;
                         case QuestionType.CommodityPrice:
                             //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);

@@ -19,12 +19,17 @@ namespace XmppBot.GetParsedText
         {
         }
 
-        public Dictionary<QuestionType, string> ParseLine(string command, string line)
+        public Dictionary<QuestionType, string> ParseLine(string command, string line, string userId)
         {
             Dictionary<QuestionType, string> questionTypes;
             QuestionType questionType;
             string lower = line;
             Dictionary<QuestionType, string> questionParsed = new Dictionary<QuestionType, string>();
+            if(line.ToLower().Contains("Set reminder"))
+            {
+                if(SetReminder(line, userId))
+                questionParsed.Add(QuestionType.SetReminder,"Reminder set for at");
+            }
             RegexOptions options = RegexOptions.None;
             if ((new Regex(string.Concat("(\\d+)\\s*", "(-)\\s*", "((?:[a-z][a-z]+))\\s*"), RegexOptions.IgnoreCase | RegexOptions.Singleline | RegexOptions.IgnorePatternWhitespace)).IsMatch(lower))
             {
@@ -57,8 +62,8 @@ namespace XmppBot.GetParsedText
                             questionType = (questionNumberInt == 5 ? QuestionType.CommodityPrice : QuestionType.UnknownQuestionType);
                         }
                         questionParsed.Add(questionType, variable);
-                        questionTypes = questionParsed;
-                        return questionTypes;
+                        //questionTypes = questionParsed;
+                        return questionParsed;
                     }
                 }
             }
@@ -83,6 +88,36 @@ namespace XmppBot.GetParsedText
             questionParsed.Add(matchingQuestion.Value, questionVariable);
             questionTypes = questionParsed;
             return questionTypes;
+        }
+
+        public int GetScheduleTime()
+        {
+            using (var entities = new DeptBotEntities())
+            {
+                var schudles = entities.Schedules.FirstOrDefault();
+                return 0;
+            }
+         }
+
+        private bool SetReminder(string line, string userId)
+        {
+            var columns = line.Split('-');
+            int intHour = Convert.ToInt32(columns[1].Trim());
+            string runSchedule = columns[2].Trim();
+            string reminderMessage = columns[3].Trim();
+            using (var entities = new DeptBotEntities())
+            {
+                var existingSchedule = entities.Schedules.FirstOrDefault(x => x.IntHour == intHour && x.DayType == runSchedule);
+                if (existingSchedule == null)
+                    existingSchedule=entities.Schedules.Add(new Schedule { IntHour = intHour, DayType = runSchedule });
+                entities.SaveChanges();
+                var existingReminderSchedule = entities.UserReminders.FirstOrDefault(x => x.ScheduleId == existingSchedule.ScheduleId && userId==userId);
+                if (existingReminderSchedule == null)
+                    entities.UserReminders.Add(new UserReminder { ScheduleId = existingSchedule.ScheduleId, UserId = userId, ReminderMessages = "HourReminder" });
+                else
+                    existingReminderSchedule.ReminderMessages += "HourReminder";
+            }
+                return true;
         }
     }
 }

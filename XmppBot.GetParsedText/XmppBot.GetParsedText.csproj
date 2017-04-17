@@ -33,6 +33,14 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Google.Apis.Calendar.v3, Version=1.25.0.822, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab" />
     <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
@@ -43,7 +51,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +64,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Answer.cs" />
+    <Compile Include="DeptBot.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeptBot.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeptBot.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeptBot.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeptBot.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeptBot.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Epic.cs" />
     <Compile Include="HypothekerInfo.cs" />
     <Compile Include="Individual.cs" />
@@ -66,12 +92,25 @@
     <Compile Include="ResponseIssues.cs" />
     <Compile Include="Room.cs" />
     <Compile Include="RoomInfo.cs" />
+    <Compile Include="Schedule.cs">
+      <DependentUpon>DeptBot.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserReminder.cs">
+      <DependentUpon>DeptBot.tt</DependentUpon>
+    </Compile>
     <Compile Include="Weather.cs" />
     <Compile Include="WeatherInfo.cs" />
     <Compile Include="WeatherResponse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <EntityDeploy Include="DeptBot.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DeptBot.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DeptBot.edmx.diagram">
+      <DependentUpon>DeptBot.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +118,21 @@
       <Project>{390CD7BF-249A-4B40-9FDB-508C45F621BE}</Project>
       <Name>XmppBot.GoogleApi</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DeptBot.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DeptBot.Context.cs</LastGenOutput>
+      <DependentUpon>DeptBot.edmx</DependentUpon>
+    </Content>
+    <Content Include="DeptBot.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DeptBot.edmx</DependentUpon>
+      <LastGenOutput>DeptBot.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DeptBotModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Schedule">
+    <Key>
+      <PropertyRef Name="ScheduleId" />
+    </Key>
+    <Property Name="ScheduleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IntHour" Type="int" Nullable="false" />
+    <Property Name="DayType" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DeptBot.dbo.UserReminder' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="UserReminder">
+    <Key>
+      <PropertyRef Name="UserScheduleId" />
+      <PropertyRef Name="ScheduleId" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="ReminderMessages" />
+    </Key>
+    <Property Name="UserScheduleId" Type="int" Nullable="false" />
+    <Property Name="ScheduleId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ReminderMessages" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_UserReminder_Schedule">
+    <End Role="Schedule" Type="Self.Schedule" Multiplicity="1" />
+    <End Role="UserReminder" Type="Self.UserReminder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Schedule">
+        <PropertyRef Name="ScheduleId" />
+      </Principal>
+      <Dependent Role="UserReminder">
+        <PropertyRef Name="ScheduleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DeptBotModelStoreContainer">
+    <EntitySet Name="Schedule" EntityType="Self.Schedule" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserReminder" EntityType="Self.UserReminder" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [UserReminder].[UserScheduleId] AS [UserScheduleId], 
+    [UserReminder].[ScheduleId] AS [ScheduleId], 
+    [UserReminder].[UserId] AS [UserId], 
+    [UserReminder].[ReminderMessages] AS [ReminderMessages]
+    FROM [dbo].[UserReminder] AS [UserReminder]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_UserReminder_Schedule" Association="Self.FK_UserReminder_Schedule">
+      <End Role="Schedule" EntitySet="Schedule" />
+      <End Role="UserReminder" EntitySet="UserReminder" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

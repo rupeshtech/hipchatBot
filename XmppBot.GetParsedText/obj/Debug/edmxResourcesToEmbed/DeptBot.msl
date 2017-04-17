@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DeptBotModelStoreContainer" CdmEntityContainer="DeptBotEntities">
+    <EntitySetMapping Name="Schedules">
+      <EntityTypeMapping TypeName="DeptBotModel.Schedule">
+        <MappingFragment StoreEntitySet="Schedule">
+          <ScalarProperty Name="ScheduleId" ColumnName="ScheduleId" />
+          <ScalarProperty Name="IntHour" ColumnName="IntHour" />
+          <ScalarProperty Name="DayType" ColumnName="DayType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserReminders">
+      <EntityTypeMapping TypeName="DeptBotModel.UserReminder">
+        <MappingFragment StoreEntitySet="UserReminder">
+          <ScalarProperty Name="UserScheduleId" ColumnName="UserScheduleId" />
+          <ScalarProperty Name="ScheduleId" ColumnName="ScheduleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ReminderMessages" ColumnName="ReminderMessages" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

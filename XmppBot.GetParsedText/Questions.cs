@@ -75,7 +75,9 @@ namespace XmppBot.GetParsedText
 			RoomQuery,
 			FindIndividualQuery,
 			JiraIssue,
-			CommodityPrice
+			CommodityPrice,
+            ReminderHour,
+            SetReminder
 		}
 	}
 }

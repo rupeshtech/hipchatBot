@@ -22,11 +22,11 @@ namespace XmppBot.GoogleApi
         {
             _service = _service ?? GetCalendarService();
         }
-        public FreeBusyResponse GetAvailableRoomsInfo(List<string> roomIds, string startTime, string endTime)
+        public FreeBusyResponse GetAvailableRoomsInfo(List<string> roomIds, string startTime, int duration)
         {
             FreeBusyRequest freeBusyRequest = new FreeBusyRequest();
             freeBusyRequest.TimeMin = DateTime.Now;
-            freeBusyRequest.TimeMax = DateTime.Now.AddMinutes(15);
+            freeBusyRequest.TimeMax = DateTime.Now.AddMinutes(duration);
             freeBusyRequest.Items = new List<FreeBusyRequestItem>();
             foreach (var roomId in roomIds)
                 freeBusyRequest.Items.Add(new FreeBusyRequestItem { Id = roomId });
