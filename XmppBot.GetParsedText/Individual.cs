@@ -20,6 +20,7 @@ namespace XmppBot.GetParsedText
         public DateTime? Busy_From;
 
         public string RoomName;
+        public bool IsRoom;
 
         public string BusyWith
         {

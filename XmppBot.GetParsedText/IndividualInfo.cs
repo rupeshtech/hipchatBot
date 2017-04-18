@@ -14,11 +14,12 @@ namespace XmppBot.GetParsedText
 
         public Individual GetIndividualInfo(string id)
         {
+            var isRoom = id.Contains("resource.calendar.google.com") ? true : false;
             var calendarinfo = new GoogleHandler();
             var events = calendarinfo.GetCalendarInfo(id,"","");
-            var individualInfo = new Individual { Name = id };
+            var individualInfo = new Individual { Name = id, IsRoom= isRoom };
             individualInfo.Events = new List<CalendarEvent>();
-            foreach (var eventItem in events.Items.OrderByDescending(x=>x.Start.Date))
+            foreach (var eventItem in events.Items.OrderBy(x=>x.Start.Date))
             {
                 var calendarEvent = new CalendarEvent();
                 var when = eventItem.Start.DateTime;
@@ -49,9 +50,14 @@ namespace XmppBot.GetParsedText
                     else
                     calendarEvent.Attendees.Add("more than 10 people");
                 }
+                if(calendarEvent.Busy_From.Value.TimeOfDay.ToString() == "12:00:00 AM" && (calendarEvent.Busy_Subject.ToUpper().Contains("ROTTERDAM")|| calendarEvent.Busy_Subject.ToUpper().Contains("AMSTERDAM")))
+                {
+
+                }
+                else
                 individualInfo.Events.Add(calendarEvent);
             }
-            if (individualInfo.Events.Any(x => x.Busy_From < DateTime.Now))
+            if (individualInfo.Events.Any(x => x.Busy_From < DateTime.Now && x.Busy_From.Value.TimeOfDay.ToString() != "12:00:00 AM"))
             {
                 individualInfo.IsBusyNow = true;
                 var currentEvent = individualInfo.Events.FirstOrDefault(x => x.Busy_From < DateTime.Now && x.Busy_Till >DateTime.Now);

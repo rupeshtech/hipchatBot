@@ -9,8 +9,15 @@ namespace XmppBot.GetParsedText
 {
     public class RoomInfo
     {
+        Dictionary<int, string> QuestionsList;
         public RoomInfo()
         {
+            QuestionsList = QuestionsList ?? GetDurationList();
+        }
+
+        private Dictionary<int, string> GetDurationList()
+        {
+            return null;
         }
 
         public List<Room> GetAvailableRooms(string city)
@@ -22,15 +29,37 @@ namespace XmppBot.GetParsedText
             switch(typeOfSearch.ToLower())
             {
                 case "quick":
+                case "quck":
+                case "quik":
+                case "quic":
+                case "qick":
+                case "quk":
+                case "qik":
+                case "qk":
+                case "qc":
+                case "qu":
                     timeMax = 10;
                     break;
                 case "short":
+                case "shor":
+                case "shrt":
+                case "sort":
+                case "shot":
                     timeMax = 30;
                     break;
                 case "medium":
+                case "mediu":
+                case "medim":
+                case "medum":
+                case "mdium":
+                case "meium":
                     timeMax = 60;
                     break;
                 case "long":
+                case "lon":
+                case "lng":
+                case "ong":
+                case "log":
                     timeMax = 90;
                     break;
                 default:
