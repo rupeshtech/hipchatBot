@@ -5076,3 +5076,80 @@ test - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c610.hipchat.
 2017-04-18 09:07:33,396 [9] INFO XmppBot.Common.Bot - Connecting...
 2017-04-18 09:07:33,431 [9] INFO XmppBot.Common.Bot - Connected.
 2017-04-18 09:07:37,412 [14] INFO XmppBot.Common.Bot - Message : 1-rotterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b611.hipchat.com|5292
+2017-04-18 12:06:51,591 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-18 12:06:51,742 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-04-18 12:06:51,776 [10] INFO XmppBot.Common.Bot - Connected.
+2017-04-18 12:06:59,956 [11] INFO XmppBot.Common.Bot - Message : hi - from 94767_751606@chat.hipchat.com/mac_macweb||proxy|proxy-c601.hipchat.com|5252
+2017-04-18 12:07:18,248 [11] INFO XmppBot.Common.Bot - Message : 2-Peter - from 94767_751606@chat.hipchat.com/mac_macweb||proxy|proxy-c601.hipchat.com|5252
+2017-04-18 12:07:45,319 [17] INFO XmppBot.Common.Bot - Message : 2-Sarah - from 94767_751606@chat.hipchat.com/mac_macweb||proxy|proxy-c601.hipchat.com|5252
+2017-04-18 12:08:01,086 [17] INFO XmppBot.Common.Bot - Message : 2-Peter Emmerzaal - from 94767_751606@chat.hipchat.com/mac_macweb||proxy|proxy-c601.hipchat.com|5252
+2017-04-18 12:10:21,165 [28] INFO XmppBot.Common.Bot - Message : 2-sarah - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d608.hipchat.com|5292
+2017-04-18 12:10:29,597 [29] INFO XmppBot.Common.Bot - Message : 2-sarah wubben - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d608.hipchat.com|5292
+2017-04-18 12:13:14,913 [36] INFO XmppBot.Common.Bot - Message : hi - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d608.hipchat.com|5292
+2017-04-18 12:13:34,127 [44] INFO XmppBot.Common.Bot - Message : 1-rotterdam - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d608.hipchat.com|5292
+2017-04-18 12:13:46,228 [42] INFO XmppBot.Common.Bot - Message : 2-sarah - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d608.hipchat.com|5292
+2017-04-18 12:13:52,777 [40] INFO XmppBot.Common.Bot - Message : 2- sarah wubben - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d608.hipchat.com|5292
+2017-04-18 12:55:31,233 [12] INFO XmppBot.Common.Bot - Message : hi - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:55:44,144 [12] INFO XmppBot.Common.Bot - Message : 1-Rotterdam - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:55:53,742 [92] INFO XmppBot.Common.Bot - Message : 1 - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:56:21,689 [89] INFO XmppBot.Common.Bot - Message : 2-Sarah - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:56:44,631 [99] INFO XmppBot.Common.Bot - Message : Where is Rupesh - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:56:55,776 [98] INFO XmppBot.Common.Bot - Message : Where is Rupesh busy - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:57:23,175 [98] INFO XmppBot.Common.Bot - Message : 2-Sarah Wubben - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:57:45,794 [95] INFO XmppBot.Common.Bot - Message : 2-big room - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:58:03,032 [103] INFO XmppBot.Common.Bot - Message : Big Room 2 - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:58:11,612 [103] INFO XmppBot.Common.Bot - Message : 2-Big Room 2 - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:58:42,346 [95] INFO XmppBot.Common.Bot - Message : Weather in Waddinxveen - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:58:50,877 [95] INFO XmppBot.Common.Bot - Message : Weather in Delft - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:58:59,571 [95] INFO XmppBot.Common.Bot - Message : Weather in Amsterdam - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:59:06,983 [95] INFO XmppBot.Common.Bot - Message : Weather in The Netherlands - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:59:14,114 [95] INFO XmppBot.Common.Bot - Message : Weather in London - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:59:25,299 [97] INFO XmppBot.Common.Bot - Message : Weather in Washinton - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:59:29,687 [97] INFO XmppBot.Common.Bot - Message : Weather in Washinton? - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c606.hipchat.com|5292
+2017-04-18 12:59:39,922 [95] INFO XmppBot.Common.Bot - Message : 2-london - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d608.hipchat.com|5292
+2017-04-18 12:59:45,640 [95] INFO XmppBot.Common.Bot - Message : 3-london - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d608.hipchat.com|5292
+2017-04-18 12:59:50,345 [99] INFO XmppBot.Common.Bot - Message : 3-London - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d608.hipchat.com|5292
+2017-04-18 13:00:03,502 [97] INFO XmppBot.Common.Bot - Message : 3- New york - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d608.hipchat.com|5292
+2017-04-18 14:42:44,731 [184] INFO XmppBot.Common.Bot - Message : 2-jasper steenweg - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d608.hipchat.com|5292
+2017-04-18 14:46:20,064 [164] INFO XmppBot.Common.Bot - Message : hi - from 94767_2658077@chat.hipchat.com/mac_macweb||proxy|proxy-b603.hipchat.com|5282
+2017-04-18 14:46:48,757 [167] INFO XmppBot.Common.Bot - Message : where is Rupesh busy? - from 94767_2658077@chat.hipchat.com/mac_macweb||proxy|proxy-b603.hipchat.com|5282
+2017-04-18 14:47:10,051 [159] INFO XmppBot.Common.Bot - Message : 2-sarah - from 94767_2658077@chat.hipchat.com/mac_macweb||proxy|proxy-b603.hipchat.com|5282
+2017-04-18 14:47:18,913 [161] INFO XmppBot.Common.Bot - Message : 2-sarah wubben - from 94767_2658077@chat.hipchat.com/mac_macweb||proxy|proxy-b603.hipchat.com|5282
+2017-04-18 14:47:39,331 [161] INFO XmppBot.Common.Bot - Message : 1-amsterdam - from 94767_2658077@chat.hipchat.com/mac_macweb||proxy|proxy-b603.hipchat.com|5282
+2017-04-18 14:48:43,434 [162] INFO XmppBot.Common.Bot - Message : 5-beer - from 94767_2658077@chat.hipchat.com/mac_macweb||proxy|proxy-b603.hipchat.com|5282
+2017-04-18 14:48:56,805 [162] INFO XmppBot.Common.Bot - Message : 5-bier - from 94767_2658077@chat.hipchat.com/mac_macweb||proxy|proxy-b603.hipchat.com|5282
+2017-04-18 14:49:22,733 [162] INFO XmppBot.Common.Bot - Message : 5-kaas - from 94767_2658077@chat.hipchat.com/mac_macweb||proxy|proxy-b603.hipchat.com|5282
+2017-04-18 15:11:22,070 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-18 15:11:22,166 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-18 15:11:22,219 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-18 15:11:33,696 [14] INFO XmppBot.Common.Bot - Message : 2-sandor voordes - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b607.hipchat.com|5252
+2017-04-18 15:13:10,630 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-18 15:13:10,714 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-18 15:13:10,749 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-18 15:13:16,609 [14] INFO XmppBot.Common.Bot - Message : 2-sandor voordes - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b607.hipchat.com|5252
+2017-04-18 15:14:51,778 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-04-18 15:14:51,890 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-04-18 15:14:51,955 [9] INFO XmppBot.Common.Bot - Connected.
+2017-04-18 15:14:59,218 [14] INFO XmppBot.Common.Bot - Message : 2-sandor voordes - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b607.hipchat.com|5252
+2017-04-18 15:15:18,878 [10] INFO XmppBot.Common.Bot - Message : 2- blue room - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b607.hipchat.com|5252
+2017-04-18 15:15:29,885 [11] INFO XmppBot.Common.Bot - Message : 2- Admiral Blue Room - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b607.hipchat.com|5252

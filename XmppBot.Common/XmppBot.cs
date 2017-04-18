@@ -264,7 +264,7 @@ namespace XmppBot.Common
                             {
                                 var list = individualQuery.Substring(individualQuery.IndexOf("found.")+6);
                                 var foundList = list.Split(',');
-                                helpTextt.AppendLine($"/code {Environment.NewLine}More than one {lineParsed.First().Value} found. Who are you lokinh for {list}");
+                                helpTextt.AppendLine($"/code {Environment.NewLine}More than one {lineParsed.First().Value} found. Who are you loking for {list}");
                                 SendMessage(msg.From, $"{helpTextt}", msg.Type);
                                 break;
                             }
@@ -278,14 +278,16 @@ namespace XmppBot.Common
 
                             if (individualInfo.IsBusyNow)
                             {
-                                helpTextt.AppendLine($"/code {Environment.NewLine}{lineParsed.First().Value} is busy now. Till {individualInfo.Busy_Till}.In {individualInfo.RoomName}");
+                                helpTextt.AppendLine($"/code {Environment.NewLine}{lineParsed.First().Value} is busy now. Till {individualInfo.Busy_Till}");
+                                if(individualInfo.RoomName !=null)
+                                    helpTextt.Append($" In {individualInfo.RoomName}");
                                 if (individualInfo.BusyWith !=null && !individualInfo.BusyWith.Contains("more than"))
-                                    helpTextt.Append($"With{individualInfo.BusyWith}");
+                                    helpTextt.Append($" With {individualInfo.BusyWith}");
                             }
                             else
                             {
                                 if (!individualInfo.IsRoom)
-                                    helpTextt.AppendLine($"/code {Environment.NewLine}{lineParsed.First().Value} is free now. His\\Her next meeting is {individualInfo.Events.FirstOrDefault().Busy_From}  at {individualInfo.Events.FirstOrDefault().RoomName}");
+                                    helpTextt.AppendLine($"/code {Environment.NewLine}{lineParsed.First().Value} is free now. His\\Her next meeting is {individualInfo.Events.FirstOrDefault(x=>x.Busy_From.Value.TimeOfDay.ToString() != "12:00:00 AM").Busy_From}  at {individualInfo.Events.FirstOrDefault().RoomName}");
                                 else
                                     helpTextt.AppendLine($"/code {Environment.NewLine}{lineParsed.First().Value} is free now. Next meeting from {individualInfo.Events.FirstOrDefault().Busy_From}");
                             }
