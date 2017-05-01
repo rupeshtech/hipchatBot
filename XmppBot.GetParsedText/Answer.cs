@@ -161,7 +161,7 @@ namespace XmppBot.GetParsedText
             string str;
             if (city != null)
             {
-                str = ((Regex.IsMatch(city, "\\brotterdam\\b", RegexOptions.IgnoreCase) || Regex.IsMatch(city, "\\bamsterdam\\b", RegexOptions.IgnoreCase) ? false : !Regex.IsMatch(city, "\\bmanchester\\b", RegexOptions.IgnoreCase)) ? "Please specify office location. For ex: Available rooms in Amsterdam." : JsonConvert.SerializeObject((new RoomInfo()).GetAvailableRooms(city)));
+                str = ((Regex.IsMatch(city, "\\brotterdam\\b", RegexOptions.IgnoreCase) || Regex.IsMatch(city, "\\bamsterdam\\b", RegexOptions.IgnoreCase) ? false : !Regex.IsMatch(city, "\\bmanchester\\b", RegexOptions.IgnoreCase)) ? "Please specify office location (or plz check spelling). For ex: Amsterdam." : JsonConvert.SerializeObject((new RoomInfo()).GetAvailableRooms(city)));
             }
             else
             {

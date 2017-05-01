@@ -20,7 +20,7 @@ namespace XmppBot.GetParsedText
             return null;
         }
 
-        public List<Room> GetAvailableRooms(string city)
+        public RoomsStatus GetAvailableRooms(string city)
         {
             city = city.Replace(" ","");
             var cityToSearch = city.Split('-').First();
@@ -83,7 +83,7 @@ namespace XmppBot.GetParsedText
             var availableRooms = roomsInfo.Calendars.Where(x => x.Value.Busy.Count == 0).Select(x => x.Key);
             var rooms = roomsList.Where(x => availableRooms.Contains(x.Key)).Select(r => new Room { Name = r.Value }).ToList();
             var roomss = roomsList.Where(x => unavailableRooms.Contains(x.Key)).Select(r => new Room { Name = r.Value }).ToList();
-            return rooms;
+            return new RoomsStatus { Rooms=rooms,Minutes=timeMax};
         }
     }
 }

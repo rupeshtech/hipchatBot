@@ -58,11 +58,11 @@ namespace XmppBot.GoogleApi
             UserCredential credential;
 
             using (var stream =
-                new FileStream(@"C:\Users\rupes\Downloads\client_id.json", FileMode.Open, FileAccess.Read))
+                new FileStream(@"C:\Temp\client_id.json", FileMode.Open, FileAccess.Read))
             {
                 string credPath = System.Environment.GetFolderPath(
                     System.Environment.SpecialFolder.Personal);
-                credPath = @"C:\Users\rupes\CalendarDept.json";//Path.Combine(credPath, ".credentials/calendar-dotnet-quickstart.json");
+                credPath = @"C:\Temp\CalendarDept.json";//Path.Combine(credPath, ".credentials/calendar-dotnet-quickstart.json");
 
                 credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
                     GoogleClientSecrets.Load(stream).Secrets,

@@ -4,125 +4,72 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DeptBotModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="Schedule">
+    <Schema Namespace="DeptBotModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Reminder">
           <Key>
-            <PropertyRef Name="ScheduleId" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="ScheduleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="IntHour" Type="int" Nullable="false" />
-          <Property Name="DayType" Type="nvarchar" MaxLength="50" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'DeptBot.dbo.UserReminder' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="UserReminder">
-          <Key>
-            <PropertyRef Name="UserScheduleId" />
-            <PropertyRef Name="ScheduleId" />
-            <PropertyRef Name="UserId" />
-            <PropertyRef Name="ReminderMessages" />
-          </Key>
-          <Property Name="UserScheduleId" Type="int" Nullable="false" />
-          <Property Name="ScheduleId" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="UserId" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="ReminderMessages" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="HourInt" Type="int" Nullable="false" />
+          <Property Name="RunDay" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ReminderText" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
         </EntityType>
-        <Association Name="FK_UserReminder_Schedule">
-          <End Role="Schedule" Type="Self.Schedule" Multiplicity="1" />
-          <End Role="UserReminder" Type="Self.UserReminder" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Schedule">
-              <PropertyRef Name="ScheduleId" />
-            </Principal>
-            <Dependent Role="UserReminder">
-              <PropertyRef Name="ScheduleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
+        <Function Name="SetNextRunTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="DeptBotModelStoreContainer">
-          <EntitySet Name="Schedule" EntityType="Self.Schedule" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="UserReminder" EntityType="Self.UserReminder" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [UserReminder].[UserScheduleId] AS [UserScheduleId], 
-    [UserReminder].[ScheduleId] AS [ScheduleId], 
-    [UserReminder].[UserId] AS [UserId], 
-    [UserReminder].[ReminderMessages] AS [ReminderMessages]
-    FROM [dbo].[UserReminder] AS [UserReminder]</DefiningQuery>
-          </EntitySet>
-          <AssociationSet Name="FK_UserReminder_Schedule" Association="Self.FK_UserReminder_Schedule">
-            <End Role="Schedule" EntitySet="Schedule" />
-            <End Role="UserReminder" EntitySet="UserReminder" />
-          </AssociationSet>
+          <EntitySet Name="Reminder" EntityType="Self.Reminder" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DeptBotModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Schedule">
-          <Key>
-            <PropertyRef Name="ScheduleId" />
-          </Key>
-          <Property Name="ScheduleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="IntHour" Type="Int32" Nullable="false" />
-          <Property Name="DayType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="UserReminders" Relationship="Self.FK_UserReminder_Schedule" FromRole="Schedule" ToRole="UserReminder" />
-        </EntityType>
-        <EntityType Name="UserReminder">
-          <Key>
-            <PropertyRef Name="UserScheduleId" />
-            <PropertyRef Name="ScheduleId" />
-            <PropertyRef Name="UserId" />
-            <PropertyRef Name="ReminderMessages" />
-          </Key>
-          <Property Name="UserScheduleId" Type="Int32" Nullable="false" />
-          <Property Name="ScheduleId" Type="Int32" Nullable="false" />
-          <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="ReminderMessages" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Schedule" Relationship="Self.FK_UserReminder_Schedule" FromRole="UserReminder" ToRole="Schedule" />
-        </EntityType>
-        <Association Name="FK_UserReminder_Schedule">
-          <End Role="Schedule" Type="Self.Schedule" Multiplicity="1" />
-          <End Role="UserReminder" Type="Self.UserReminder" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Schedule">
-              <PropertyRef Name="ScheduleId" />
-            </Principal>
-            <Dependent Role="UserReminder">
-              <PropertyRef Name="ScheduleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="DeptBotEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Schedules" EntityType="Self.Schedule" />
-          <EntitySet Name="UserReminders" EntityType="Self.UserReminder" />
-          <AssociationSet Name="FK_UserReminder_Schedule" Association="Self.FK_UserReminder_Schedule">
-            <End Role="Schedule" EntitySet="Schedules" />
-            <End Role="UserReminder" EntitySet="UserReminders" />
-          </AssociationSet>
+          <FunctionImport Name="SetNextRunTime" ReturnType="Collection(DeptBotModel.SetNextRunTime_Result)" />
+          <EntitySet Name="Reminders" EntityType="DeptBotModel.Reminder" />
         </EntityContainer>
-      </Schema>
+        <ComplexType Name="SetNextRunTime_Result">
+          <Property Type="Int32" Name="ScheduleId" Nullable="false" />
+          <Property Type="Int32" Name="IntHour" Nullable="false" />
+          <Property Type="String" Name="DayType" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="DayTypeInt" Nullable="false" />
+        </ComplexType>
+        <EntityType Name="Reminder">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HourInt" Type="Int32" Nullable="false" />
+          <Property Name="RunDay" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ReminderText" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="DeptBotModelStoreContainer" CdmEntityContainer="DeptBotEntities">
-          <EntitySetMapping Name="Schedules">
-            <EntityTypeMapping TypeName="DeptBotModel.Schedule">
-              <MappingFragment StoreEntitySet="Schedule">
+          <FunctionImportMapping FunctionImportName="SetNextRunTime" FunctionName="DeptBotModel.Store.SetNextRunTime">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DeptBotModel.SetNextRunTime_Result">
                 <ScalarProperty Name="ScheduleId" ColumnName="ScheduleId" />
                 <ScalarProperty Name="IntHour" ColumnName="IntHour" />
                 <ScalarProperty Name="DayType" ColumnName="DayType" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="UserReminders">
-            <EntityTypeMapping TypeName="DeptBotModel.UserReminder">
-              <MappingFragment StoreEntitySet="UserReminder">
-                <ScalarProperty Name="UserScheduleId" ColumnName="UserScheduleId" />
-                <ScalarProperty Name="ScheduleId" ColumnName="ScheduleId" />
+                <ScalarProperty Name="DayTypeInt" ColumnName="DayTypeInt" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="Reminders">
+            <EntityTypeMapping TypeName="DeptBotModel.Reminder">
+              <MappingFragment StoreEntitySet="Reminder">
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="ReminderText" ColumnName="ReminderText" />
+                <ScalarProperty Name="RunDay" ColumnName="RunDay" />
+                <ScalarProperty Name="HourInt" ColumnName="HourInt" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="ReminderMessages" ColumnName="ReminderMessages" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

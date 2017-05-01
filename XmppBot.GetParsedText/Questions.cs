@@ -8,17 +8,44 @@ namespace XmppBot.GetParsedText
 	public class Questions
 	{
 		public static Dictionary<string, QuestionType> QuestionList;
+        public static Dictionary<string, QuestionType> HelpList;
 
-		public Questions()
+        public Questions()
 		{
 			Questions.QuestionList = Questions.QuestionList ?? this.GetQuestionsList();
-		}
+            Questions.HelpList = Questions.HelpList ?? this.GetHelpList();
+        }
 
-		private Dictionary<string, QuestionType> GetQuestionsList()
+        private Dictionary<string, QuestionType> GetHelpList()
+        {
+            Dictionary<string, QuestionType> questionsList = new Dictionary<string, QuestionType>()
+            {
+                { "room", QuestionType.RoomHelp },
+                { "Rooterdam", QuestionType.RoomHelp },
+                { "Amsterdam", QuestionType.RoomHelp },
+                { "Manchester", QuestionType.RoomHelp },
+                { "kamer", QuestionType.RoomHelp },
+                { "free", QuestionType.RoomHelp },
+                { "individual", QuestionType.IndividualHelp },
+                { "find", QuestionType.IndividualHelp },
+                { "calendar", QuestionType.IndividualHelp },
+                { "reminder", QuestionType.ReminderHelp },
+                { "remindr", QuestionType.ReminderHelp },
+                { "reminde", QuestionType.ReminderHelp },
+                { "reminer", QuestionType.ReminderHelp },
+                { "rminder", QuestionType.ReminderHelp },
+                { "", QuestionType.Help }
+
+            };
+            return questionsList;
+        }
+
+        private Dictionary<string, QuestionType> GetQuestionsList()
 		{
 			Dictionary<string, QuestionType> questionsList = new Dictionary<string, QuestionType>()
 			{
-				{ "weather", QuestionType.Weather },
+                { "help", QuestionType.CommodityPrice },
+                { "weather", QuestionType.Weather },
 				{ "wather", QuestionType.Weather },
 				{ "wether", QuestionType.Weather },
 				{ "weathe", QuestionType.Weather },
@@ -61,9 +88,10 @@ namespace XmppBot.GetParsedText
 				{ "vergelijk prijs", QuestionType.CommodityPrice },
 				{ "price ", QuestionType.CommodityPrice },
 				{ "prijs", QuestionType.CommodityPrice },
-				{ "cpmpare ", QuestionType.CommodityPrice },
-				{ "vergelijk", QuestionType.CommodityPrice }
-			};
+				{ "cpmpare ", QuestionType.CommodityPrice }
+				
+                
+            };
 			return questionsList;
 		}
 		public enum QuestionType
@@ -77,7 +105,11 @@ namespace XmppBot.GetParsedText
 			JiraIssue,
 			CommodityPrice,
             ReminderHour,
-            SetReminder
+            SetReminder,
+            Help,
+            RoomHelp,
+            IndividualHelp,
+            ReminderHelp
 		}
 	}
 }

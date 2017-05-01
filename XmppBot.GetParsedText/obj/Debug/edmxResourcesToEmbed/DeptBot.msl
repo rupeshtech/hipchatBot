@@ -1,22 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="DeptBotModelStoreContainer" CdmEntityContainer="DeptBotEntities">
-    <EntitySetMapping Name="Schedules">
-      <EntityTypeMapping TypeName="DeptBotModel.Schedule">
-        <MappingFragment StoreEntitySet="Schedule">
+    <FunctionImportMapping FunctionImportName="SetNextRunTime" FunctionName="DeptBotModel.Store.SetNextRunTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DeptBotModel.SetNextRunTime_Result">
           <ScalarProperty Name="ScheduleId" ColumnName="ScheduleId" />
           <ScalarProperty Name="IntHour" ColumnName="IntHour" />
           <ScalarProperty Name="DayType" ColumnName="DayType" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="UserReminders">
-      <EntityTypeMapping TypeName="DeptBotModel.UserReminder">
-        <MappingFragment StoreEntitySet="UserReminder">
-          <ScalarProperty Name="UserScheduleId" ColumnName="UserScheduleId" />
-          <ScalarProperty Name="ScheduleId" ColumnName="ScheduleId" />
+          <ScalarProperty Name="DayTypeInt" ColumnName="DayTypeInt" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Reminders">
+      <EntityTypeMapping TypeName="DeptBotModel.Reminder">
+        <MappingFragment StoreEntitySet="Reminder">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ReminderText" ColumnName="ReminderText" />
+          <ScalarProperty Name="RunDay" ColumnName="RunDay" />
+          <ScalarProperty Name="HourInt" ColumnName="HourInt" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
-          <ScalarProperty Name="ReminderMessages" ColumnName="ReminderMessages" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -10,15 +10,12 @@
 namespace XmppBot.GetParsedText
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class UserReminder
+    public partial class SetNextRunTime_Result
     {
-        public int UserScheduleId { get; set; }
         public int ScheduleId { get; set; }
-        public string UserId { get; set; }
-        public string ReminderMessages { get; set; }
-    
-        public virtual Schedule Schedule { get; set; }
+        public int IntHour { get; set; }
+        public string DayType { get; set; }
+        public int DayTypeInt { get; set; }
     }
 }

@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
+using System.Configuration;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -15,6 +17,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
+//using System.Timers;
 using XmppBot.GetParsedText;
 using static XmppBot.GetParsedText.Questions;
 
@@ -87,7 +90,7 @@ namespace XmppBot.Common
 
             _client.OnRosterStart += new ObjectHandler(_client_OnRosterStart);
             _client.OnRosterItem += new XmppClientConnection.RosterHandler(_client_OnRosterItem);
-            //ScheduleService();
+            ScheduleService();
         }
 
         #region Xmpp Events
@@ -102,15 +105,26 @@ namespace XmppBot.Common
             {
                 Jid jid = new Jid(room + "@" + _config.ConferenceServer);
                 mucManager.JoinRoom(jid, _config.RoomNick);
+                //mucManager.GrantVoice(jid,, "testvoice");
             }
         }
+        //public System.Timers.Timer myTimer;
         public void ScheduleService()
         {
             try
             {
+                //myTimer = new System.Timers.Timer(1000); //one hour in milliseconds
+                //myTimer.Elapsed += new ElapsedEventHandler(SchedularCallback);
+                TimeSpan timeSpan;
+                int currentMinute = DateTime.Now.Minute;
+                currentMinute = currentMinute == 60 ? 0 : currentMinute;
+                log.Info($"going to run after {60-currentMinute} minutes.");
+                var isTestRunTimeInterval = Convert.ToBoolean(ConfigurationManager.AppSettings["RunTimeInterval"]);
                 _schedular = new Timer(new TimerCallback(SchedularCallback));
-                var scheduledTime = GetNextScheduleTime();
-                var timeSpan = scheduledTime.Subtract(DateTime.Now);
+                if(isTestRunTimeInterval)
+                timeSpan = DateTime.Now.AddSeconds(10).Subtract(DateTime.Now);
+                else
+                    timeSpan = DateTime.Now.AddMinutes(60-currentMinute).Subtract(DateTime.Now);
                 var dueTime = Convert.ToInt32(timeSpan.TotalMilliseconds);
 
                 _schedular.Change(dueTime, Timeout.Infinite);
@@ -119,20 +133,36 @@ namespace XmppBot.Common
             {
             }
         }
-        private DateTime GetNextScheduleTime()
-        {
-            DateTime scheduledTime;
-            var parser = new LineParser();
-            int nextRunTime=parser.GetScheduleTime();
-            scheduledTime = DateTime.Parse($"{nextRunTime}:00");
-            return scheduledTime;
-        }
 
         private void SchedularCallback(object e)
         {
-            Jid botUser = new Jid("94767_4717350@chat.hipchat.com");
-            xmpp_OnMessage(null, new Message { Body="Remember to fill hours",From=botUser,Type= MessageType.chat});
+            GetRemindersAndSendMessage();
+            //Jid botUser = new Jid("94767_4717350@chat.hipchat.com");
+            //xmpp_OnMessage(null, new Message { Body="Remember to fill hours",From=botUser,Type= MessageType.chat});
+            ScheduleService();
         }
+
+        private void GetRemindersAndSendMessage()
+        {
+            var reminders = GetReminder();
+            foreach(var reminder in reminders)
+            {
+                SendMessageToUser(reminder);
+            }
+        }
+
+        private void SendMessageToUser(Reminder reminder)
+        {
+            Jid botUser = new Jid($"{reminder.UserId}@chat.hipchat.com");
+            xmpp_OnMessage(null, new Message { Body = $"Your Reminder: { reminder.ReminderText}", From = botUser, Type = MessageType.chat });
+        }
+
+        private List<Reminder> GetReminder()
+        {
+            var parser = new LineParser();
+            return parser.GetReminders();
+        }
+
         private void xmpp_OnMessage(object sender, Message msg)
         {
             if (!string.IsNullOrEmpty(msg.Body))
@@ -151,8 +181,9 @@ namespace XmppBot.Common
                 }
                 else
                 {
-                    if (msg.Body.Contains("Remember"))
-                        user = new ChatUser { Id="94767_4717350",Bare= "94767_4717350@chat.hiptchat.com" };
+                    if (msg.Body.Contains("Your Reminder:"))
+                        //user = new ChatUser { Id="94767_4717350",Bare= "94767_4717350@chat.hiptchat.com" };
+                        user = new ChatUser { Id = msg.From.User, Bare = msg.From.Bare };
                     else
                         _roster.TryGetValue(msg.From.Bare, out user);
                 }
@@ -161,7 +192,7 @@ namespace XmppBot.Common
                 if (null == user || _config.RoomNick == user.Name)
                     return;
                 ParsedLine line;
-                if (msg.Body.Contains("Remember"))
+                if (msg.Body.Contains("Your Reminder:"))
                     line = new ParsedLine(msg.From.Bare, msg.Body.Trim(), msg.From.User, user, (BotMessageType)msg.Type);
                 else
                     line = new ParsedLine(msg.From.Bare, msg.Body.Trim(), msg.From.User, user, (BotMessageType)msg.Type);
@@ -171,7 +202,7 @@ namespace XmppBot.Common
                     Regex.IsMatch(line.Command, "\\bmorning\\b", RegexOptions.IgnoreCase) ||
                     Regex.IsMatch(line.Command, "\\bhello\\b", RegexOptions.IgnoreCase) ||
                     Regex.IsMatch(line.Command, "\\bhey\\b", RegexOptions.IgnoreCase) ||
-                    Regex.IsMatch(line.Command, "\\bheyy\\b", RegexOptions.IgnoreCase) ||
+                    Regex.IsMatch(line.Command, "\\bheyy\\b", RegexOptions.IgnoreCase) ||   
                     Regex.IsMatch(line.Command, "\\bGoodMorning\\b", RegexOptions.IgnoreCase) ||
                     Regex.IsMatch(line.Command, "\\bgoedendag\\b", RegexOptions.IgnoreCase) ||
                     Regex.IsMatch(line.Command, "\\bmorgen\\b", RegexOptions.IgnoreCase) ||
@@ -184,24 +215,25 @@ namespace XmppBot.Common
                     var initalText = new StringBuilder();
                     initalText.AppendLine($"/code {Environment.NewLine}1) Room avalibility.Please type: '1-Amsterdam' or 'Availabe room in Amsterdam?'");
                     initalText.AppendLine( $"2) Depster info or Room info.Please type: '2-Rupesh' or '2- big room 1' or 'Where is Rupesh busy' or 'What is Rupesh doing?'");
-                    initalText.AppendLine( $"3) Weather info.Please type: '3-London' or 'Weather in Washinton?'");
-                    initalText.AppendLine( $"4) Mortgage info.Please type: '4-MortageInfo' or 'How much can I take loan?'");
-                    initalText.AppendLine( $"5) Grocery info.Please type: '5-Heineken' or 'Compare price Bier?' or 'Prijs Heineken?'");
+                    //initalText.AppendLine( $"3) Weather info.Please type: '3-London' or 'Weather in Washinton?'");
+                    initalText.AppendLine($"3) Set\\Delete reminder.Please type: set reminder-10-daily-Standup meeting");
+                    initalText.AppendLine( $"4) Grocery info.Please type: '4-Heineken' or 'Compare price Bier?' or 'Prijs Heineken?'");
+                    initalText.AppendLine($"5) Mortgage info.Please type: '5-MortageInfo' or 'How much can I take loan?'");
                     SendMessage(msg.From, $"{initalText}", msg.Type);
                 }
                 else if(!line.Command.Contains("<p>"))
                 {
                     try
                     {
-                        _schedular = new Timer(new TimerCallback(SchedularCallback));
+                       // _schedular = new Timer(new TimerCallback(SchedularCallback));
                         var parser = new LineParser();
-                        if (msg.Body.Contains("Remember")) {
+                        if (msg.Body.Contains("Your Reminder:")) {
                             Dictionary<QuestionType, string> questionTypes= new Dictionary<QuestionType, string>();
-                            questionTypes.Add(QuestionType.ReminderHour, "");
+                            questionTypes.Add(QuestionType.ReminderHour, msg.Body);
                             lineParsed = questionTypes;
                     }
                         else
-                            lineParsed = parser.ParseLine(line.Command, line.Raw,user.Id);
+                            lineParsed = parser.ParseLine(line.Command, line.Raw,user.Id,user.Name);
                     }
                     catch (Exception ex)
                     {
@@ -210,9 +242,10 @@ namespace XmppBot.Common
                         var initalTexttt = new StringBuilder();
                         initalTexttt.AppendLine($"/code {Environment.NewLine}1) Room avalibility.Please type: '1-Amsterdam' or 'Availabe room in Amsterdam?'");
                         initalTexttt.AppendLine($"2) Depster info or Room info.Please type: '2-Rupesh' or '2- big room 1' or 'Where is Rupesh busy' or 'What is Rupesh doing?'");
-                        initalTexttt.AppendLine($"3) Weather info.Please type: '3-London' or 'Weather in Washinton?'");
-                        initalTexttt.AppendLine($"4) Mortgage info.Please type: '4-MortageInfo' or 'How much can I take loan?'");
-                        initalTexttt.AppendLine($"5) Grocery info.Please type: '5-Heineken' or 'Compare price Bier?' or 'Prijs Heineken?'");
+                        //initalTexttt.AppendLine($"3) Weather info.Please type: '3-London' or 'Weather in Washinton?'");
+                        initalTexttt.AppendLine($"3) Set\\Delete reminder.Please type: set reminder-10-daily-Standup meeting");
+                        initalTexttt.AppendLine($"4) Grocery info.Please type: '4-Heineken' or 'Compare price Bier?' or 'Prijs Heineken?'");
+                        initalTexttt.AppendLine($"5) Mortgage info.Please type: '5-MortageInfo' or 'How much can I take loan?'");
                         SendMessage(msg.From, $"{initalTexttt}", msg.Type);
                     }
                 }
@@ -226,6 +259,20 @@ namespace XmppBot.Common
                             var answerWeather= answer.GetAnswer(QuestionType.Weather, lineParsed.First().Value);
                             SendMessage(msg.From, $"{answerWeather}", msg.Type);
                             break;
+                        case QuestionType.Help:
+                            SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/bot_individual.png", msg.Type);
+                            SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/bot_room.png", msg.Type);
+                            SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/reminder.png", msg.Type);
+                            break;
+                        case QuestionType.IndividualHelp:
+                            SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/bot_individual.png", msg.Type);
+                            break;
+                        case QuestionType.RoomHelp:
+                            SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/bot_room.png", msg.Type);
+                            break;
+                        case QuestionType.ReminderHelp:
+                            SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/reminder.png", msg.Type);
+                            break;
                         case QuestionType.MortgageInfo:
                             //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
                             SendMessage(msg.From, $"Please type my salary is ur salary euro/year and my age is ur age.For ex: My salary is 50000 euro/year and my age is 35.", msg.Type);
@@ -238,39 +285,40 @@ namespace XmppBot.Common
                         case QuestionType.RoomQuery:
                             //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
                             var roomQueryAnswer = answer.GetAnswer(QuestionType.RoomQuery, lineParsed.First().Value);
-                            if(roomQueryAnswer.Contains("Please specify office location."))
+                            if(roomQueryAnswer.Contains("Please specify office location"))
                             {
                                 SendMessage(msg.From, $"{roomQueryAnswer}", msg.Type);
                                 break;
                             }
                             var helpTexttt = new StringBuilder();
-                            var rooms = JsonConvert.DeserializeObject<List<Room>>(roomQueryAnswer);
-                            if (rooms==null || rooms.Count == 0 || rooms.All(x => string.IsNullOrEmpty(x.Name)))
+                            var roomStatus = JsonConvert.DeserializeObject<RoomsStatus>(roomQueryAnswer);
+                            if (roomStatus.Rooms == null || roomStatus.Rooms.Count == 0 || roomStatus.Rooms.All(x => string.IsNullOrEmpty(x.Name)))
                                 helpTexttt.AppendLine($"/code {Environment.NewLine}No room available now at {lineParsed.First().Value}");
                             else
                             {
-                                SendMessage(msg.From, $"Available rooms in {lineParsed.First().Value} for next 15 minutes are", msg.Type);
+                                SendMessage(msg.From, $"Available rooms in {lineParsed.First().Value} for next {roomStatus.Minutes} minutes are", msg.Type);
                                 helpTexttt.AppendLine($"/code");
-                                foreach (var room in rooms)
+                                foreach (var room in roomStatus.Rooms)
                                     helpTexttt.AppendLine($"{room.Name}");
                             }
                             SendMessage(msg.From, $"{helpTexttt}", msg.Type);
                             break;
                         case QuestionType.FindIndividualQuery:
-                            //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
+                            //byte[] image = 
+                            
                             var individualQuery = answer.GetAnswer(QuestionType.FindIndividualQuery, lineParsed.First().Value);
                             var helpTextt = new StringBuilder();
                             if (individualQuery.Contains("More than one"))
                             {
                                 var list = individualQuery.Substring(individualQuery.IndexOf("found.")+6);
                                 var foundList = list.Split(',');
-                                helpTextt.AppendLine($"/code {Environment.NewLine}More than one {lineParsed.First().Value} found. Who are you loking for {list}");
+                                helpTextt.AppendLine($"/code {Environment.NewLine}More than one {new CultureInfo("en-US").TextInfo.ToTitleCase(lineParsed.First().Value)} found. Who are you l0oking for {list}. Please type full name. for ex: 2- sandor voordes");
                                 SendMessage(msg.From, $"{helpTextt}", msg.Type);
                                 break;
                             }
                             if (individualQuery.Contains("Couldn't find any"))
                             {
-                                helpTextt.AppendLine($"/code {Environment.NewLine} {individualQuery} ");
+                                helpTextt.AppendLine($"/code {Environment.NewLine} {new CultureInfo("en-US").TextInfo.ToTitleCase(individualQuery)} ");
                                 SendMessage(msg.From, $"{helpTextt}", msg.Type);
                                 break;
                             }
@@ -278,7 +326,7 @@ namespace XmppBot.Common
 
                             if (individualInfo.IsBusyNow)
                             {
-                                helpTextt.AppendLine($"/code {Environment.NewLine}{lineParsed.First().Value} is busy now. Till {individualInfo.Busy_Till}");
+                                helpTextt.AppendLine($"/code {Environment.NewLine}{new CultureInfo("en-US").TextInfo.ToTitleCase(lineParsed.First().Value)} is busy now. Till {individualInfo.Busy_Till}");
                                 if(individualInfo.RoomName !=null)
                                     helpTextt.Append($" In {individualInfo.RoomName}");
                                 if (individualInfo.BusyWith !=null && !individualInfo.BusyWith.Contains("more than"))
@@ -287,20 +335,21 @@ namespace XmppBot.Common
                             else
                             {
                                 if (!individualInfo.IsRoom)
-                                    helpTextt.AppendLine($"/code {Environment.NewLine}{lineParsed.First().Value} is free now. His\\Her next meeting is {individualInfo.Events.FirstOrDefault(x=>x.Busy_From.Value.TimeOfDay.ToString() != "12:00:00 AM").Busy_From}  at {individualInfo.Events.FirstOrDefault().RoomName}");
+                                    helpTextt.AppendLine($"/code {Environment.NewLine}{new CultureInfo("en-US").TextInfo.ToTitleCase(lineParsed.First().Value)} is free now. His\\Her next meeting is {individualInfo.Events.FirstOrDefault(x=>x.Busy_From.Value.TimeOfDay.ToString() != "12:00:00 AM").Busy_From}  at {individualInfo.Events.FirstOrDefault().RoomName}");
                                 else
-                                    helpTextt.AppendLine($"/code {Environment.NewLine}{lineParsed.First().Value} is free now. Next meeting from {individualInfo.Events.FirstOrDefault().Busy_From}");
+                                    helpTextt.AppendLine($"/code {Environment.NewLine}{new CultureInfo("en-US").TextInfo.ToTitleCase(lineParsed.First().Value)} is free now. Next meeting from {individualInfo.Events.FirstOrDefault().Busy_From}");
                             }
                             SendMessage(msg.From, $"{helpTextt}", msg.Type);
                             break;
                         case QuestionType.JiraIssue:
-                            //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
                             var jiraQuery = answer.GetAnswer(QuestionType.JiraIssue, user.Name);
                             SendMessage(msg.From, $"{jiraQuery}", msg.Type);
                             break;
                         case QuestionType.ReminderHour:
-                            //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
-                            SendMessage(msg.From, $"hi", msg.Type);
+                            SendMessage(msg.From, $"{msg.Body}", msg.Type);
+                            break;
+                        case QuestionType.SetReminder:
+                            SendMessage(msg.From, $"{lineParsed.First().Value}", msg.Type);
                             break;
                         case QuestionType.CommodityPrice:
                             //SendMessage(msg.From, $"You asked: {msg.Body.Trim()}.", msg.Type);
@@ -329,9 +378,11 @@ namespace XmppBot.Common
                             var initalTextt = new StringBuilder();
                             initalTextt.AppendLine($"/code {Environment.NewLine}1) Room avalibility.Please type: '1-Amsterdam' or 'Availabe room in Amsterdam?'");
                             initalTextt.AppendLine($"2) Depster info or Room info.Please type: '2-Rupesh' or '2- big room 1' or 'Where is Rupesh busy' or 'What is Rupesh doing?'");
-                            initalTextt.AppendLine($"3) Weather info.Please type: '3-London' or 'Weather in Washinton?'");
-                            initalTextt.AppendLine($"4) Mortgage info.Please type: '4-MortageInfo' or 'How much can I take loan?'");
-                            initalTextt.AppendLine($"5) Grocery info.Please type: '5-Heineken' or 'Compare price Bier?' or 'Prijs Heineken?'");
+                            //initalTextt.AppendLine($"3) Weather info.Please type: '3-London' or 'Weather in Washinton?'");
+                            initalTextt.AppendLine($"3) Set\\Delete reminder.Please type: set reminder-10-daily-Standup meeting");
+                            initalTextt.AppendLine($"4) Grocery info.Please type: '4-Heineken' or 'Compare price Bier?' or 'Prijs Heineken?'");
+                            initalTextt.AppendLine($"5) Mortgage info.Please type: '5-MortageInfo' or 'How much can I take loan?'");
+
                             SendMessage(msg.From, $"{initalTextt}", msg.Type);
                             break;
 

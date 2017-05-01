@@ -5,6 +5,11 @@ using System.Text;
 
 namespace XmppBot.GetParsedText
 {
+    public class RoomsStatus
+    {
+        public List<Room> Rooms;
+        public int Minutes;
+    }
     public class Room
     {
         public string Name;

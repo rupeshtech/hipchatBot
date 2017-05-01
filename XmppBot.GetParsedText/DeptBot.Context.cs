@@ -12,6 +12,8 @@ namespace XmppBot.GetParsedText
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class DeptBotEntities : DbContext
     {
@@ -25,7 +27,11 @@ namespace XmppBot.GetParsedText
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Schedule> Schedules { get; set; }
-        public virtual DbSet<UserReminder> UserReminders { get; set; }
+        public virtual DbSet<Reminder> Reminders { get; set; }
+    
+        public virtual ObjectResult<SetNextRunTime_Result> SetNextRunTime()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SetNextRunTime_Result>("SetNextRunTime");
+        }
     }
 }
