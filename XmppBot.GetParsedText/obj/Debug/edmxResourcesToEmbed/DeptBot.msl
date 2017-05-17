@@ -23,5 +23,20 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Depsters">
+      <EntityTypeMapping TypeName="DeptBotModel.Depster">
+        <MappingFragment StoreEntitySet="Depster">
+          <ScalarProperty Name="Organization_Name" ColumnName="Organization_Name" />
+          <ScalarProperty Name="Phone_Value" ColumnName="Phone_Value" />
+          <ScalarProperty Name="Phone_Type" ColumnName="Phone_Type" />
+          <ScalarProperty Name="E_mail_Value" ColumnName="E-mail_Value" />
+          <ScalarProperty Name="E_mail_Type" ColumnName="E-mail_Type" />
+          <ScalarProperty Name="Family_Name" ColumnName="Family_Name" />
+          <ScalarProperty Name="Additional_Name" ColumnName="Additional_Name" />
+          <ScalarProperty Name="Given_Name" ColumnName="Given_Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

@@ -1,5 +1,7 @@
-﻿using HtmlAgilityPack;
+﻿using Atlassian.Jira;
+using HtmlAgilityPack;
 using Newtonsoft.Json;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +16,7 @@ namespace XmppBot.GetParsedText
 {
     public class Answer
     {
+        private ResponseIssues _issues;
         public Answer()
         {
         }
@@ -25,42 +28,47 @@ namespace XmppBot.GetParsedText
 
         public string GetAnswer(QuestionType questionType, string questionVariables)
         {
-            string weather;
+            string answer;
             switch (questionType)
             {
                 case QuestionType.Weather:
                     {
-                        weather = this.GetWeather(questionVariables);
+                        answer = this.GetWeather(questionVariables);
                         break;
                     }
                 case QuestionType.MortgageInfo:
                     {
-                        weather = this.GetWeather("");
+                        answer = this.GetWeather("");
                         break;
                     }
                 case QuestionType.MortgageCalculation:
                     {
-                        weather = this.GetMortgage(questionVariables.Split(new char[] { ' ' }).First<string>(), questionVariables.Split(new char[] { ' ' }).Last<string>());
+                        answer = this.GetMortgage(questionVariables.Split(new char[] { ' ' }).First<string>(), questionVariables.Split(new char[] { ' ' }).Last<string>());
                         break;
                     }
                 case QuestionType.RoomQuery:
                     {
-                        weather = this.GetRoomQuery(questionVariables);
+                        answer = this.GetRoomQuery(questionVariables);
                         break;
                     }
                 case QuestionType.FindIndividualQuery:
                     {
-                        weather = this.GetFindIndividualQuery(questionVariables);
+                        answer = this.GetFindIndividualQuery(questionVariables);
                         break;
                     }
                 case QuestionType.JiraIssue:
                     {
-                        weather = this.GetJiraIssue(questionVariables);
+                        answer = this.GetJiraIssue(questionVariables);
                         break;
                     }
                 case QuestionType.CommodityPrice:
                     {
-                        weather = this.GetCommodityPrice(questionVariables);
+                        answer = this.GetCommodityPrice(questionVariables);
+                        break;
+                    }
+                case QuestionType.IndividualProfile:
+                    {
+                        answer = this.GetIndividualProfile(questionVariables);
                         break;
                     }
                 default:
@@ -68,7 +76,7 @@ namespace XmppBot.GetParsedText
                         goto case QuestionType.MortgageInfo;
                     }
             }
-            return weather;
+            return answer;
         }
 
         private string GetCommodityPrice(string questionVariables)
@@ -147,7 +155,44 @@ namespace XmppBot.GetParsedText
 
         private string GetJiraIssue(string questionVariables)
         {
-            return "hi";
+            var userName = questionVariables.Split('-').First();
+            var project = questionVariables.Split('-').Last();
+            var jiraProjectResult = GetProjects();
+            jiraProjectResult.Wait();
+            var projects = jiraProjectResult.Result;
+            var issues = GetIssues(userName);
+            issues.Wait();
+            var issuesProjectWise = new List<Issue_>();
+            var responseIssues = issues.Result;
+            if (project != null)
+            {
+                var projectName = projects.FirstOrDefault(x => x.name.ToLower().Contains(project.ToLower())).key;
+                issuesProjectWise = responseIssues.issues.Where(x=> x.key.Contains(projectName)).ToList();
+            }
+            else
+                issuesProjectWise = responseIssues.issues;
+                return JsonConvert.SerializeObject(issuesProjectWise);
+        }
+
+        private Task<List<JiraProject>> GetProjects()
+        {
+            var client = Atlassian.Jira.Jira.CreateRestClient("https://tamtam.atlassian.net", "autojiratasks", "miqQRY97avuI");
+            var restClient = client.RestClient;
+            var response = restClient.ExecuteRequestAsync<List<JiraProject>>(Method.GET,
+                             $@"/rest/api/2/project");
+            return response;
+        }
+        private Task<ResponseIssues> GetIssues(string questionVariables)
+        {
+            //questionVariables ="Wesley Donk";// "Elmar Kouwenhoven";
+            var resource = new DeptResource();
+            var userName = DeptResource.ContactList.FirstOrDefault(x => x.Value.Contains(questionVariables)).Key;
+            userName = userName.Split('@').First();
+            var client = Atlassian.Jira.Jira.CreateRestClient("https://tamtam.atlassian.net", "autojiratasks", "miqQRY97avuI");
+            var restClient = client.RestClient;
+            var response = restClient.ExecuteRequestAsync<ResponseIssues>(Method.GET,
+                             $@"/rest/api/2/search?jql=assignee={userName}");
+            return response;
         }
 
         private string GetMortgage(string annualIncome, string age)
@@ -200,6 +245,16 @@ namespace XmppBot.GetParsedText
             }
             Current_condition weatherInformation = currentCondition;
             return (weatherInformation == null ? string.Format("Couldn't retrive weather info for {0}", city) : string.Format("Temperatur is {0} degree celcius. Feels like {1} degree celcius. Humidity is {2}. Wind Speed is {3} kmph", new object[] { weatherInformation.temp_C, weatherInformation.FeelsLikeC, weatherInformation.humidity, weatherInformation.windspeedKmph }));
+        }
+
+        public string GetIndividualProfile(string value)
+        {
+            using (var entities = new DeptBotEntities())
+            {
+                var alldepsters = entities.Depsters.ToList();
+                var depsters = alldepsters.Where(x => $"{x.Given_Name} {x.Family_Name}".ToLower().Contains(value) || $"{x.Family_Name} {x.Given_Name}".ToLower().Contains(value) || $"{x.Family_Name} {x.Additional_Name} {x.Given_Name}".ToLower().Contains(value) || $"{x.Given_Name} {x.Additional_Name} {x.Family_Name}".ToLower().Contains(value)).ToList();
+                return JsonConvert.SerializeObject(depsters);
+            }
         }
     }
 

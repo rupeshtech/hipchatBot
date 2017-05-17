@@ -28,6 +28,7 @@ namespace XmppBot.GetParsedText
         }
     
         public virtual DbSet<Reminder> Reminders { get; set; }
+        public virtual DbSet<Depster> Depsters { get; set; }
     
         public virtual ObjectResult<SetNextRunTime_Result> SetNextRunTime()
         {

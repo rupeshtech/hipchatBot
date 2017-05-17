@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using XmppBot.Log;
 using static XmppBot.GetParsedText.Questions;
 
 namespace XmppBot.GetParsedText
@@ -64,6 +66,10 @@ namespace XmppBot.GetParsedText
                         else if (questionNumberInt == 4)
                         {
                             questionType = QuestionType.CommodityPrice;
+                        }
+                        else if (questionNumberInt == 6)
+                        {
+                            questionType = QuestionType.IndividualProfile;
                         }
                         else
                         {
@@ -164,28 +170,31 @@ namespace XmppBot.GetParsedText
             string reminderMessage = columns.Last().Trim();
             try
             {
-                if(isDate || runSchedule.ToLower()=="today" || runSchedule.ToLower()=="tomorrow")
+                if (isDate || runSchedule.ToLower() == "today" || runSchedule.ToLower() == "tomorrow")
                 {
                     runSchedule = isDate ? reminderdateToSet.ToString() : runSchedule.ToLower() == "today" ? DateTime.Now.Date.ToString() : DateTime.Now.AddDays(1).Date.ToString();
                     var setRminder = SetReminder(userId, intHour, runSchedule, userName, reminderMessage);
                     return setRminder ? new KeyValuePair<bool, string>(true, $"{line} -success") : new KeyValuePair<bool, string>(false, $"Please check ur reminder days. Valida values are Today,Daily,Weekdays,weekends,Monday,Tuesday....Sunday");
                 }
-                switch (runSchedule.ToLower())
+                else
                 {
-                    case "monday":
-                    case "tuesday":
-                    case "wednesday":
-                    case "thursday":
-                    case "friday":
-                    case "saturday":
-                    case "sunday":
-                    case "weekdays":
-                    case "weekends":
-                    case "daily":
-                        var setRminder= SetReminder(userId, intHour, runSchedule,userName,reminderMessage);
-                        return setRminder?new KeyValuePair<bool, string>(true, $"{line} -success"): new KeyValuePair<bool, string>(false, $"Please check ur reminder days. Valida values are Today,Daily,Weekdays,weekends,Monday,Tuesday....Sunday");
-                    default:
-                        return new KeyValuePair<bool, string>(false, $"Please check ur reminder days. Valida values are Today,Daily,Weekdays,weekends,Monday,Tuesday....Sunday");
+                    switch (runSchedule.ToLower())
+                    {
+                        case "monday":
+                        case "tuesday":
+                        case "wednesday":
+                        case "thursday":
+                        case "friday":
+                        case "saturday":
+                        case "sunday":
+                        case "weekdays":
+                        case "weekends":
+                        case "daily":
+                            var setRminder = SetReminder(userId, intHour, runSchedule, userName, reminderMessage);
+                            return setRminder ? new KeyValuePair<bool, string>(true, $"{line} -success") : new KeyValuePair<bool, string>(false, $"Please check ur reminder days. Valida values are Today,Daily,Weekdays,weekends,Monday,Tuesday....Sunday");
+                        default:
+                            return new KeyValuePair<bool, string>(false, $"Please check ur reminder days. Valida values are Today,Daily,Weekdays,weekends,Monday,Tuesday....Sunday");
+                    }
                 }
                 }
             catch (Exception)
@@ -212,6 +221,7 @@ namespace XmppBot.GetParsedText
             }
             catch (Exception ex)
             {
+                Logger.Log(JsonConvert.SerializeObject(ex));
                 return false;
             }
         }

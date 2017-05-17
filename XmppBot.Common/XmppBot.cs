@@ -145,6 +145,7 @@ namespace XmppBot.Common
         private void GetRemindersAndSendMessage()
         {
             var reminders = GetReminder();
+            reminders.Add(new Reminder());
             foreach(var reminder in reminders)
             {
                 SendMessageToUser(reminder);
@@ -153,8 +154,10 @@ namespace XmppBot.Common
 
         private void SendMessageToUser(Reminder reminder)
         {
+            reminder.UserId = "94767_dha";
+            reminder.ReminderText = "(standup)";
             Jid botUser = new Jid($"{reminder.UserId}@chat.hipchat.com");
-            xmpp_OnMessage(null, new Message { Body = $"Your Reminder: { reminder.ReminderText}", From = botUser, Type = MessageType.chat });
+            xmpp_OnMessage(null, new Message { Body = $"Your Reminder: { reminder.ReminderText}", From = botUser, Type = MessageType.groupchat });
         }
 
         private List<Reminder> GetReminder()
@@ -164,7 +167,7 @@ namespace XmppBot.Common
         }
 
         private void xmpp_OnMessage(object sender, Message msg)
-        {
+         {
             if (!string.IsNullOrEmpty(msg.Body))
             {
                 log.InfoFormat("Message : {0} - from {1}", msg.Body, msg.From);
@@ -173,10 +176,9 @@ namespace XmppBot.Common
 
                 if (msg.Type == MessageType.groupchat)
                 {
-                    //msg.From.Resource = User Room Name
-                    //msg.From.Bare = Room 'email'
-                    //msg.From.User = Room id
-
+                    msg.From.Resource = "test";
+                    msg.From.User = "757630";
+                    var t = _roster.Values.OrderByDescending(x => x.Name);
                     user = _roster.Values.FirstOrDefault(u => u.Name == msg.From.Resource);
                 }
                 else
@@ -214,7 +216,7 @@ namespace XmppBot.Common
                     SendMessage(msg.From, $"I am here to help you. As of now I have learnt to answer following questions?", msg.Type);
                     var initalText = new StringBuilder();
                     initalText.AppendLine($"/code {Environment.NewLine}1) Room avalibility.Please type: '1-Amsterdam' or 'Availabe room in Amsterdam?'");
-                    initalText.AppendLine( $"2) Depster info or Room info.Please type: '2-Rupesh' or '2- big room 1' or 'Where is Rupesh busy' or 'What is Rupesh doing?'");
+                    initalText.AppendLine( $"2) Depster info or Room info.Please type: '2-Rupesh' or '2- big room 1' or 'Where is Rupesh' or 'What is Rupesh doing?'");
                     //initalText.AppendLine( $"3) Weather info.Please type: '3-London' or 'Weather in Washinton?'");
                     initalText.AppendLine($"3) Set\\Delete reminder.Please type: set reminder-10-daily-Standup meeting");
                     initalText.AppendLine( $"4) Grocery info.Please type: '4-Heineken' or 'Compare price Bier?' or 'Prijs Heineken?'");
@@ -241,7 +243,7 @@ namespace XmppBot.Common
                         SendMessage(msg.From, $"Sorry i couldn't understand your question.You can ask me following questions", msg.Type);
                         var initalTexttt = new StringBuilder();
                         initalTexttt.AppendLine($"/code {Environment.NewLine}1) Room avalibility.Please type: '1-Amsterdam' or 'Availabe room in Amsterdam?'");
-                        initalTexttt.AppendLine($"2) Depster info or Room info.Please type: '2-Rupesh' or '2- big room 1' or 'Where is Rupesh busy' or 'What is Rupesh doing?'");
+                        initalTexttt.AppendLine($"2) Depster info or Room info.Please type: '2-Rupesh' or '2- big room 1' or 'Where is Rupesh' or 'What is Rupesh doing?'");
                         //initalTexttt.AppendLine($"3) Weather info.Please type: '3-London' or 'Weather in Washinton?'");
                         initalTexttt.AppendLine($"3) Set\\Delete reminder.Please type: set reminder-10-daily-Standup meeting");
                         initalTexttt.AppendLine($"4) Grocery info.Please type: '4-Heineken' or 'Compare price Bier?' or 'Prijs Heineken?'");
@@ -260,12 +262,37 @@ namespace XmppBot.Common
                             SendMessage(msg.From, $"{answerWeather}", msg.Type);
                             break;
                         case QuestionType.Help:
-                            SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/bot_individual.png", msg.Type);
-                            SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/bot_room.png", msg.Type);
-                            SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/reminder.png", msg.Type);
+                            var help = new StringBuilder();
+                            SendMessage(msg.From, $"Please type one of the following to see examples", msg.Type);
+                            help.AppendLine($"/code {Environment.NewLine} help room {Environment.NewLine} help person {Environment.NewLine} help reminder");
+                            SendMessage(msg.From, $"{help}", msg.Type);
+                            //SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/bot_individual.png", msg.Type);
+                            //SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/bot_room.png", msg.Type);
+                            //SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/reminder.png", msg.Type);
                             break;
                         case QuestionType.IndividualHelp:
                             SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/bot_individual.png", msg.Type);
+                            break;
+                        case QuestionType.IndividualProfile:
+                            var depstersProfile = answer.GetAnswer(QuestionType.IndividualProfile, lineParsed.First().Value);
+                            var depsters = JsonConvert.DeserializeObject<List<Depster>>(depstersProfile);
+                            if(depsters==null || depsters.Count==0)
+                                SendMessage(msg.From, $"No {lineParsed.First().Value} found", msg.Type);
+                            if (depsters.Count > 2)
+                            {
+                                var individualProfileText = new StringBuilder();
+                                individualProfileText.AppendLine($"/code {Environment.NewLine}. More than one {lineParsed.First().Value}. {Environment.NewLine} {String.Join(";", depsters.Select(x => $"{x.Given_Name} {x.Family_Name}").ToList())}");
+                                SendMessage(msg.From, $"{individualProfileText}", msg.Type);
+                            }
+                            if (depsters.Count > 0 && depsters.Count < 3)
+                            {
+                                foreach (var depster in depsters)
+                                {
+                                    var individualProfile = new StringBuilder();
+                                    individualProfile.AppendLine($"/code {Environment.NewLine} {depster.Given_Name} {depster.Family_Name} {Environment.NewLine} {depster.Organization_Name} {Environment.NewLine}{depster.Phone_Value} {Environment.NewLine}{depster.E_mail_Value}");
+                                    SendMessage(msg.From, $"{individualProfile}", msg.Type);
+                                }
+                            }
                             break;
                         case QuestionType.RoomHelp:
                             SendMessage(msg.From, $"http://helpdeptbot.azurewebsites.net/bot_room.png", msg.Type);
@@ -342,8 +369,13 @@ namespace XmppBot.Common
                             SendMessage(msg.From, $"{helpTextt}", msg.Type);
                             break;
                         case QuestionType.JiraIssue:
-                            var jiraQuery = answer.GetAnswer(QuestionType.JiraIssue, user.Name);
-                            SendMessage(msg.From, $"{jiraQuery}", msg.Type);
+                            var jiraQuery = answer.GetAnswer(QuestionType.JiraIssue, $"{user.Name}-{lineParsed.First().Value}");
+                            var issues = JsonConvert.DeserializeObject<List<Issue_>>(jiraQuery);
+                            var jiraText = new StringBuilder();
+                            //jiraText.AppendLine($"/code");
+                            foreach(var issue in issues)
+                            jiraText.AppendLine($"{issue.key}. url is {issue.IssueUrl}");
+                            SendMessage(msg.From, $"{jiraText}", msg.Type);
                             break;
                         case QuestionType.ReminderHour:
                             SendMessage(msg.From, $"{msg.Body}", msg.Type);
@@ -377,7 +409,7 @@ namespace XmppBot.Common
                             SendMessage(msg.From, $"you can also ask me following questions", msg.Type);
                             var initalTextt = new StringBuilder();
                             initalTextt.AppendLine($"/code {Environment.NewLine}1) Room avalibility.Please type: '1-Amsterdam' or 'Availabe room in Amsterdam?'");
-                            initalTextt.AppendLine($"2) Depster info or Room info.Please type: '2-Rupesh' or '2- big room 1' or 'Where is Rupesh busy' or 'What is Rupesh doing?'");
+                            initalTextt.AppendLine($"2) Depster info or Room info.Please type: '2-Rupesh' or '2- big room 1' or 'Where is Rupesh' or 'What is Rupesh doing?'");
                             //initalTextt.AppendLine($"3) Weather info.Please type: '3-London' or 'Weather in Washinton?'");
                             initalTextt.AppendLine($"3) Set\\Delete reminder.Please type: set reminder-10-daily-Standup meeting");
                             initalTextt.AppendLine($"4) Grocery info.Please type: '4-Heineken' or 'Compare price Bier?' or 'Prijs Heineken?'");

@@ -36,6 +36,6 @@ C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\System.Net.Http.Primitiv
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\System.Net.Http.WebRequest.xml
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\bin\Debug\Zlib.Portable.xml
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\obj\Debug\XmppBot.GoogleApi.csproj.App.config
-C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\obj\Debug\XmppBot.GoogleApi.csprojResolveAssemblyReference.cache
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\obj\Debug\XmppBot.GoogleApi.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\obj\Debug\XmppBot.GoogleApi.pdb
+C:\RupeshDev\Bot\hipchatBot\XmppBot.GoogleApi\obj\Debug\XmppBot.GoogleApi.csprojResolveAssemblyReference.cache

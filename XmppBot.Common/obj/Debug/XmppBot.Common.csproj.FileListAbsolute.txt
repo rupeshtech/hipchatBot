@@ -38,8 +38,11 @@ C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\System.Reactive.Linq.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\System.Reactive.PlatformServices.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\XmppBot.GetParsedText.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\XmppBot.GoogleApi.dll
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Atlassian.Jira.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\EntityFramework.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Google.Apis.Calendar.v3.dll
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\RestSharp.dll
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\XmppBot.Log.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Google.Apis.Auth.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Google.Apis.dll
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Google.Apis.PlatformServices.dll
@@ -56,7 +59,11 @@ C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\System.Reactive.Interfaces.
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\System.Reactive.Linq.xml
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\System.Reactive.PlatformServices.xml
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\XmppBot.GoogleApi.pdb
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Atlassian.Jira.pdb
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Atlassian.Jira.xml
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\EntityFramework.xml
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\RestSharp.xml
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\XmppBot.Log.pdb
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Google.Apis.Auth.pdb
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Google.Apis.Auth.xml
 C:\RupeshDev\Bot\hipchatBot\XmppBot.Common\bin\Debug\Google.Apis.pdb

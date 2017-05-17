@@ -5,6 +5,22 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="DeptBotModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DeptBot.dbo.Depster' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Depster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Given_Name" Type="varchar" MaxLength="50" />
+          <Property Name="Additional_Name" Type="varchar" MaxLength="50" />
+          <Property Name="Family_Name" Type="varchar" MaxLength="50" />
+          <Property Name="E-mail_Type" Type="varchar" MaxLength="50" />
+          <Property Name="E-mail_Value" Type="varchar" MaxLength="50" />
+          <Property Name="Phone_Type" Type="varchar" MaxLength="50" />
+          <Property Name="Phone_Value" Type="varchar" MaxLength="50" />
+          <Property Name="Organization_Name" Type="varchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="Reminder">
           <Key>
             <PropertyRef Name="Id" />
@@ -19,6 +35,19 @@
         <Function Name="SetNextRunTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="DeptBotModelStoreContainer">
           <EntitySet Name="Reminder" EntityType="Self.Reminder" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Depster" EntityType="Self.Depster" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Depster].[Id] AS [Id], 
+    [Depster].[Given_Name] AS [Given_Name], 
+    [Depster].[Additional_Name] AS [Additional_Name], 
+    [Depster].[Family_Name] AS [Family_Name], 
+    [Depster].[E-mail_Type] AS [E-mail_Type], 
+    [Depster].[E-mail_Value] AS [E-mail_Value], 
+    [Depster].[Phone_Type] AS [Phone_Type], 
+    [Depster].[Phone_Value] AS [Phone_Value], 
+    [Depster].[Organization_Name] AS [Organization_Name]
+    FROM [dbo].[Depster] AS [Depster]</DefiningQuery>
+          </EntitySet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -27,6 +56,7 @@
         <EntityContainer Name="DeptBotEntities" annotation:LazyLoadingEnabled="true">
           <FunctionImport Name="SetNextRunTime" ReturnType="Collection(DeptBotModel.SetNextRunTime_Result)" />
           <EntitySet Name="Reminders" EntityType="DeptBotModel.Reminder" />
+          <EntitySet Name="Depsters" EntityType="DeptBotModel.Depster" />
         </EntityContainer>
         <ComplexType Name="SetNextRunTime_Result">
           <Property Type="Int32" Name="ScheduleId" Nullable="false" />
@@ -44,6 +74,20 @@
           <Property Name="RunDay" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ReminderText" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Depster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Given_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Additional_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Family_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="E_mail_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="E_mail_Value" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Phone_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Phone_Value" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Organization_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         </Schema>
     </edmx:ConceptualModels>
@@ -69,6 +113,21 @@
                 <ScalarProperty Name="RunDay" ColumnName="RunDay" />
                 <ScalarProperty Name="HourInt" ColumnName="HourInt" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Depsters">
+            <EntityTypeMapping TypeName="DeptBotModel.Depster">
+              <MappingFragment StoreEntitySet="Depster">
+                <ScalarProperty Name="Organization_Name" ColumnName="Organization_Name" />
+                <ScalarProperty Name="Phone_Value" ColumnName="Phone_Value" />
+                <ScalarProperty Name="Phone_Type" ColumnName="Phone_Type" />
+                <ScalarProperty Name="E_mail_Value" ColumnName="E-mail_Value" />
+                <ScalarProperty Name="E_mail_Type" ColumnName="E-mail_Type" />
+                <ScalarProperty Name="Family_Name" ColumnName="Family_Name" />
+                <ScalarProperty Name="Additional_Name" ColumnName="Additional_Name" />
+                <ScalarProperty Name="Given_Name" ColumnName="Given_Name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

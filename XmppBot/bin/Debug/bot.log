@@ -5810,3 +5810,780 @@ test - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c610.hipchat.
 2017-05-01 20:13:50,419 [9] INFO XmppBot.Common.Bot - going to run after 47 minutes.
 2017-05-01 20:13:59,614 [10] INFO XmppBot.Common.Bot - Message : set reminder-21-today-test - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b600.hipchat.com|5262
 2017-05-01 20:15:27,049 [15] INFO XmppBot.Common.Bot - Message : set reminder-21-01052017-test - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b600.hipchat.com|5262
+2017-05-03 07:15:27,760 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 07:15:28,139 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 07:15:28,395 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 07:15:28,398 [10] INFO XmppBot.Common.Bot - going to run after 45 minutes.
+2017-05-03 07:15:51,939 [15] INFO XmppBot.Common.Bot - Message : Jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d601.hipchat.com|5292
+2017-05-03 07:25:26,963 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 07:25:27,081 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 07:25:27,282 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 07:25:27,285 [10] INFO XmppBot.Common.Bot - going to run after 35 minutes.
+2017-05-03 07:26:01,101 [11] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d601.hipchat.com|5292
+2017-05-03 07:27:44,230 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 07:27:44,376 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 07:27:44,585 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 07:27:44,587 [9] INFO XmppBot.Common.Bot - going to run after 33 minutes.
+2017-05-03 07:28:00,650 [14] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d601.hipchat.com|5292
+2017-05-03 07:29:41,130 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 07:29:41,251 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 07:29:41,450 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 07:29:41,453 [9] INFO XmppBot.Common.Bot - going to run after 31 minutes.
+2017-05-03 07:29:49,160 [11] INFO XmppBot.Common.Bot - Message : jira issues - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d601.hipchat.com|5292
+2017-05-03 07:30:57,072 [19] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d601.hipchat.com|5292
+2017-05-03 07:36:52,945 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 07:36:53,073 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 07:36:53,283 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 07:36:53,287 [9] INFO XmppBot.Common.Bot - going to run after 24 minutes.
+2017-05-03 07:37:10,088 [11] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d601.hipchat.com|5292
+2017-05-03 07:38:03,723 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 07:38:03,840 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 07:38:03,942 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 07:38:03,945 [9] INFO XmppBot.Common.Bot - going to run after 22 minutes.
+2017-05-03 07:38:09,073 [14] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d601.hipchat.com|5292
+2017-05-03 07:38:53,244 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 07:38:53,356 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 07:38:53,372 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 07:38:53,375 [9] INFO XmppBot.Common.Bot - going to run after 22 minutes.
+2017-05-03 07:39:07,965 [11] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d601.hipchat.com|5292
+2017-05-03 08:32:57,899 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 08:32:58,005 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 08:32:58,091 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 08:32:58,094 [9] INFO XmppBot.Common.Bot - going to run after 28 minutes.
+2017-05-03 08:33:07,018 [14] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c603.hipchat.com|5232
+2017-05-03 09:39:19,354 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 09:39:19,454 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 09:39:19,539 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 09:39:19,542 [9] INFO XmppBot.Common.Bot - going to run after 21 minutes.
+2017-05-03 09:39:30,281 [10] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c603.hipchat.com|5232
+2017-05-03 09:40:20,337 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 09:40:20,493 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 09:40:20,562 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 09:40:20,570 [10] INFO XmppBot.Common.Bot - going to run after 20 minutes.
+2017-05-03 09:40:26,309 [11] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c603.hipchat.com|5232
+2017-05-03 09:41:30,186 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 09:41:30,323 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 09:41:30,381 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 09:41:30,385 [10] INFO XmppBot.Common.Bot - going to run after 19 minutes.
+2017-05-03 09:41:33,759 [12] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c603.hipchat.com|5232
+2017-05-03 09:42:38,588 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 09:42:38,675 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 09:42:38,717 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 09:42:38,720 [9] INFO XmppBot.Common.Bot - going to run after 18 minutes.
+2017-05-03 09:42:43,472 [11] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c603.hipchat.com|5232
+2017-05-03 09:44:49,749 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 09:44:49,862 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 09:44:49,944 [8] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 09:44:49,952 [8] INFO XmppBot.Common.Bot - going to run after 16 minutes.
+2017-05-03 09:44:56,344 [10] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c603.hipchat.com|5232
+2017-05-03 09:45:44,608 [9] INFO XmppBot.Common.Bot - Message : https://tamtam.atlassian.net/browse/TNO-163 - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c603.hipchat.com|5232
+2017-05-03 09:46:41,828 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 09:46:41,947 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 09:46:41,978 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 09:46:41,987 [10] INFO XmppBot.Common.Bot - going to run after 14 minutes.
+2017-05-03 09:46:45,927 [11] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c603.hipchat.com|5232
+2017-05-03 09:47:24,614 [18] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c603.hipchat.com|5232
+2017-05-03 09:48:03,102 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 09:48:03,221 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 09:48:03,288 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 09:48:03,291 [10] INFO XmppBot.Common.Bot - going to run after 12 minutes.
+2017-05-03 09:48:06,024 [12] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c603.hipchat.com|5232
+2017-05-03 09:49:54,992 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 09:49:55,130 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 09:49:55,213 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 09:49:55,216 [9] INFO XmppBot.Common.Bot - going to run after 11 minutes.
+2017-05-03 09:50:30,772 [17] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_764363@chat.hipchat.com/mac_macweb||proxy|proxy-c601.hipchat.com|5282
+2017-05-03 09:54:10,700 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 09:54:10,834 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 09:54:10,884 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 09:54:10,887 [9] INFO XmppBot.Common.Bot - going to run after 6 minutes.
+2017-05-03 09:54:30,325 [14] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c603.hipchat.com|5232
+2017-05-03 09:56:42,767 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 09:56:42,880 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 09:56:42,926 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 09:56:42,929 [9] INFO XmppBot.Common.Bot - going to run after 4 minutes.
+2017-05-03 09:56:50,019 [14] INFO XmppBot.Common.Bot - Message : jira issue - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c603.hipchat.com|5232
+2017-05-03 09:57:12,817 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 09:57:13,021 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 09:57:13,044 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 09:57:13,055 [9] INFO XmppBot.Common.Bot - going to run after 3 minutes.
+2017-05-03 09:57:27,542 [14] INFO XmppBot.Common.Bot - Message : jira issue- alliantie - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-c603.hipchat.com|5232
+2017-05-03 20:01:31,083 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 20:01:31,225 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 20:01:31,343 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 20:01:31,346 [9] INFO XmppBot.Common.Bot - going to run after 59 minutes.
+2017-05-03 20:01:49,409 [3] INFO XmppBot.Common.Bot - Message : jira issue-Alliantie - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b605.hipchat.com|5282
+2017-05-03 20:06:09,165 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 20:06:09,272 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 20:06:11,983 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 20:06:11,995 [9] INFO XmppBot.Common.Bot - going to run after 54 minutes.
+2017-05-03 20:06:15,559 [14] INFO XmppBot.Common.Bot - Message : jira issue-Alliantie - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b605.hipchat.com|5282
+2017-05-03 20:08:22,854 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 20:08:23,033 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 20:08:23,092 [8] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 20:08:23,095 [8] INFO XmppBot.Common.Bot - going to run after 52 minutes.
+2017-05-03 20:08:29,395 [10] INFO XmppBot.Common.Bot - Message : jira issue-Alliantie - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b605.hipchat.com|5282
+2017-05-03 20:09:16,216 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 20:09:16,333 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 20:09:16,357 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 20:09:16,366 [9] INFO XmppBot.Common.Bot - going to run after 51 minutes.
+2017-05-03 20:09:30,910 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 20:09:31,053 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 20:09:31,210 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 20:09:31,214 [10] INFO XmppBot.Common.Bot - going to run after 51 minutes.
+2017-05-03 20:09:36,930 [11] INFO XmppBot.Common.Bot - Message : jira issue-Alliantie - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b605.hipchat.com|5282
+2017-05-03 20:10:48,781 [11] INFO XmppBot.Common.Bot - Message : jira issue-Alliantie - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b605.hipchat.com|5282
+2017-05-03 20:13:10,775 [11] ERROR XmppBot.Common.Bot - Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at agsXMPP.sasl.SaslHandler.OnStreamElement(Object sender, Node e)
+   at agsXMPP.Xml.StreamHandler.Invoke(Object sender, Node e)
+   at agsXMPP.Xml.StreamParser.DoRaiseOnStreamElement(Element el)
+2017-05-03 20:14:13,585 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 20:14:13,702 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 20:14:13,770 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 20:14:13,775 [10] INFO XmppBot.Common.Bot - going to run after 46 minutes.
+2017-05-03 20:14:17,835 [12] INFO XmppBot.Common.Bot - Message : jira issue-Alliantie - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b605.hipchat.com|5282
+2017-05-03 20:16:18,860 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 20:16:18,956 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 20:16:19,013 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 20:16:19,016 [9] INFO XmppBot.Common.Bot - going to run after 44 minutes.
+2017-05-03 20:16:28,631 [10] INFO XmppBot.Common.Bot - Message : jira issue-Alliantie - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b605.hipchat.com|5282
+2017-05-03 20:17:00,587 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 20:17:00,714 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 20:17:00,736 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 20:17:00,740 [10] INFO XmppBot.Common.Bot - going to run after 43 minutes.
+2017-05-03 20:17:04,369 [11] INFO XmppBot.Common.Bot - Message : jira issue-Alliantie - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b605.hipchat.com|5282
+2017-05-03 20:19:51,411 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-03 20:19:51,554 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-03 20:19:51,623 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-03 20:19:51,626 [9] INFO XmppBot.Common.Bot - going to run after 41 minutes.
+2017-05-03 20:20:03,066 [14] INFO XmppBot.Common.Bot - Message : jira issue-Alliantie - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b605.hipchat.com|5282
+2017-05-03 20:20:49,134 [14] INFO XmppBot.Common.Bot - Message : jira issue-Alliantie - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b605.hipchat.com|5282
+2017-05-03 20:30:07,227 [36] INFO XmppBot.Common.Bot - Message : jira issue-Alliantie - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-b605.hipchat.com|5282
+2017-05-11 21:24:01,509 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:24:01,646 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:24:01,740 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:24:01,743 [10] INFO XmppBot.Common.Bot - going to run after 36 minutes.
+2017-05-11 21:24:51,745 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:24:51,856 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:24:51,876 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:24:51,878 [9] INFO XmppBot.Common.Bot - going to run after 36 minutes.
+2017-05-11 21:25:09,876 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:09,903 [15] INFO XmppBot.Common.Bot - going to run after 35 minutes.
+2017-05-11 21:25:10,139 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:10,342 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:10,547 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:10,753 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:10,960 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:11,115 [17] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:11,370 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:11,536 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:11,732 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:11,906 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:12,088 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:12,391 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:12,596 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:12,801 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:12,955 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:13,209 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:13,418 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:13,619 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:13,804 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:14,032 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:14,233 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:14,438 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:14,579 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:14,744 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:14,914 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:15,088 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:15,257 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:15,464 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:15,668 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:15,855 [11] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:25:16,210 [10] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:26:51,878 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:26:51,967 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:26:52,089 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:26:52,093 [10] INFO XmppBot.Common.Bot - going to run after 34 minutes.
+2017-05-11 21:27:14,163 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:16,242 [16] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:17,546 [17] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:18,304 [6] INFO XmppBot.Common.Bot - going to run after 33 minutes.
+2017-05-11 21:27:18,855 [17] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:19,161 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:19,365 [17] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:19,573 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:19,775 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:19,979 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:20,184 [17] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:20,389 [16] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:20,579 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:20,751 [16] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:21,003 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:21,209 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:21,412 [16] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:21,621 [16] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:21,792 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:22,030 [16] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:22,197 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:22,437 [16] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:22,669 [16] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:23,051 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:23,257 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:23,461 [18] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:23,644 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:24,000 [18] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:24,280 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:24,485 [18] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:24,670 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:24,842 [18] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:25,011 [18] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:25,308 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:25,509 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:25,713 [18] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:25,924 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:26,081 [18] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:26,328 [18] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:26,532 [18] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:26,714 [18] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:27:26,943 [18] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:28:10,537 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:28:10,629 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:28:10,749 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:28:10,752 [9] INFO XmppBot.Common.Bot - going to run after 32 minutes.
+2017-05-11 21:28:24,348 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:30:30,371 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:30:30,465 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:30:30,578 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:30:30,582 [9] INFO XmppBot.Common.Bot - going to run after 30 minutes.
+2017-05-11 21:30:43,993 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:31:25,055 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:31:25,172 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:31:25,189 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:31:25,195 [9] INFO XmppBot.Common.Bot - going to run after 29 minutes.
+2017-05-11 21:31:35,981 [14] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:32:35,042 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:32:35,140 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:32:35,250 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:32:35,252 [9] INFO XmppBot.Common.Bot - going to run after 28 minutes.
+2017-05-11 21:32:45,731 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:33:44,183 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:33:44,281 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:33:44,399 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:33:44,402 [9] INFO XmppBot.Common.Bot - going to run after 27 minutes.
+2017-05-11 21:33:54,797 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:35:06,136 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:35:06,392 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:35:06,527 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:35:06,532 [10] INFO XmppBot.Common.Bot - going to run after 25 minutes.
+2017-05-11 21:35:16,975 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:41:53,703 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:41:53,822 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:41:53,966 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:41:53,971 [10] INFO XmppBot.Common.Bot - going to run after 19 minutes.
+2017-05-11 21:42:04,590 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:42:19,719 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:42:19,841 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:42:19,894 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:42:19,897 [10] INFO XmppBot.Common.Bot - going to run after 18 minutes.
+2017-05-11 21:42:30,490 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:44:21,098 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:44:21,220 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:44:21,464 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:44:21,467 [9] INFO XmppBot.Common.Bot - going to run after 16 minutes.
+2017-05-11 21:44:32,101 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 21:53:38,025 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:53:38,182 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:53:38,360 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:53:38,366 [10] INFO XmppBot.Common.Bot - going to run after 7 minutes.
+2017-05-11 21:54:27,869 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 21:54:28,020 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 21:54:28,048 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 21:54:28,052 [9] INFO XmppBot.Common.Bot - going to run after 6 minutes.
+2017-05-11 21:54:38,919 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:00:43,047 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 22:00:43,179 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 22:00:43,319 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 22:00:43,491 [9] INFO XmppBot.Common.Bot - going to run after 60 minutes.
+2017-05-11 22:00:54,223 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:01:56,111 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 22:01:56,241 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 22:01:56,432 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 22:01:56,440 [9] INFO XmppBot.Common.Bot - going to run after 59 minutes.
+2017-05-11 22:02:07,082 [15] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:03:19,852 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 22:03:20,003 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 22:03:20,117 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 22:03:20,121 [9] INFO XmppBot.Common.Bot - going to run after 57 minutes.
+2017-05-11 22:05:09,039 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-11 22:05:09,265 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-11 22:05:09,602 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-11 22:05:09,606 [10] INFO XmppBot.Common.Bot - going to run after 55 minutes.
+2017-05-11 22:05:20,375 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:05:24,831 [6] INFO XmppBot.Common.Bot - going to run after 55 minutes.
+2017-05-11 22:05:34,921 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:05:34,930 [6] INFO XmppBot.Common.Bot - going to run after 55 minutes.
+2017-05-11 22:05:44,965 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:05:44,968 [6] INFO XmppBot.Common.Bot - going to run after 55 minutes.
+2017-05-11 22:05:54,983 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:05:54,986 [6] INFO XmppBot.Common.Bot - going to run after 55 minutes.
+2017-05-11 22:06:05,017 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:06:05,019 [6] INFO XmppBot.Common.Bot - going to run after 54 minutes.
+2017-05-11 22:06:15,057 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:06:15,096 [6] INFO XmppBot.Common.Bot - going to run after 54 minutes.
+2017-05-11 22:06:25,133 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:06:25,138 [6] INFO XmppBot.Common.Bot - going to run after 54 minutes.
+2017-05-11 22:06:35,154 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:06:35,162 [6] INFO XmppBot.Common.Bot - going to run after 54 minutes.
+2017-05-11 22:06:45,177 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:06:45,181 [6] INFO XmppBot.Common.Bot - going to run after 54 minutes.
+2017-05-11 22:06:55,210 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:06:55,256 [6] INFO XmppBot.Common.Bot - going to run after 54 minutes.
+2017-05-11 22:07:05,270 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:07:05,279 [6] INFO XmppBot.Common.Bot - going to run after 53 minutes.
+2017-05-11 22:07:15,301 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:07:15,320 [6] INFO XmppBot.Common.Bot - going to run after 53 minutes.
+2017-05-11 22:07:25,336 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:07:25,343 [6] INFO XmppBot.Common.Bot - going to run after 53 minutes.
+2017-05-11 22:07:35,481 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:07:35,491 [6] INFO XmppBot.Common.Bot - going to run after 53 minutes.
+2017-05-11 22:07:45,510 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:07:45,525 [6] INFO XmppBot.Common.Bot - going to run after 53 minutes.
+2017-05-11 22:07:55,543 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:07:55,553 [6] INFO XmppBot.Common.Bot - going to run after 53 minutes.
+2017-05-11 22:08:05,573 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:08:05,578 [6] INFO XmppBot.Common.Bot - going to run after 52 minutes.
+2017-05-11 22:08:15,625 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:08:15,654 [6] INFO XmppBot.Common.Bot - going to run after 52 minutes.
+2017-05-11 22:08:25,690 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:08:25,697 [6] INFO XmppBot.Common.Bot - going to run after 52 minutes.
+2017-05-11 22:08:35,764 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:08:35,769 [6] INFO XmppBot.Common.Bot - going to run after 52 minutes.
+2017-05-11 22:08:45,806 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:08:45,813 [6] INFO XmppBot.Common.Bot - going to run after 52 minutes.
+2017-05-11 22:08:55,845 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:08:55,856 [6] INFO XmppBot.Common.Bot - going to run after 52 minutes.
+2017-05-11 22:09:05,885 [6] INFO XmppBot.Common.Bot - Message : Your Reminder: (standup) - from 94767_dha@chat.hipchat.com
+2017-05-11 22:09:05,890 [6] INFO XmppBot.Common.Bot - going to run after 51 minutes.
+2017-05-14 17:18:18,201 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-14 17:18:18,281 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-14 17:18:18,328 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-14 17:18:18,330 [10] INFO XmppBot.Common.Bot - going to run after 42 minutes.
+2017-05-14 17:18:42,396 [15] INFO XmppBot.Common.Bot - Message : hekp - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d602.hipchat.com|5242
+2017-05-14 17:18:55,128 [15] INFO XmppBot.Common.Bot - Message : help - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d602.hipchat.com|5242
+2017-05-14 17:19:14,158 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-14 17:19:14,261 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-14 17:19:14,278 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-14 17:19:14,281 [10] INFO XmppBot.Common.Bot - going to run after 41 minutes.
+2017-05-14 17:19:18,422 [11] INFO XmppBot.Common.Bot - Message : help - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d602.hipchat.com|5242
+2017-05-14 17:20:24,886 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-14 17:20:24,976 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-14 17:20:25,039 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-14 17:20:25,042 [10] INFO XmppBot.Common.Bot - going to run after 40 minutes.
+2017-05-14 17:20:29,218 [12] INFO XmppBot.Common.Bot - Message : help - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d602.hipchat.com|5242
+2017-05-14 17:21:32,720 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-14 17:21:32,813 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-14 17:21:32,867 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-14 17:21:32,870 [9] INFO XmppBot.Common.Bot - going to run after 39 minutes.
+2017-05-14 17:21:43,257 [10] INFO XmppBot.Common.Bot - Message : help - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d602.hipchat.com|5242
+2017-05-14 17:22:24,120 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-14 17:22:24,208 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-14 17:22:24,221 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-14 17:22:24,223 [9] INFO XmppBot.Common.Bot - going to run after 38 minutes.
+2017-05-14 17:22:27,770 [10] INFO XmppBot.Common.Bot - Message : help - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d602.hipchat.com|5242
+2017-05-14 17:23:22,712 [14] INFO XmppBot.Common.Bot - Message : help room - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d602.hipchat.com|5242
+2017-05-14 17:23:41,974 [15] INFO XmppBot.Common.Bot - Message : help available room - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d602.hipchat.com|5242
+2017-05-14 17:23:53,605 [17] INFO XmppBot.Common.Bot - Message : room help - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d602.hipchat.com|5242
+2017-05-14 17:24:06,545 [17] INFO XmppBot.Common.Bot - Message : individual help - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d602.hipchat.com|5242
+2017-05-14 17:24:22,577 [16] INFO XmppBot.Common.Bot - Message : reminder help - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d602.hipchat.com|5242
+2017-05-14 17:36:02,862 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-14 17:36:02,967 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-14 17:36:03,004 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-14 17:36:03,007 [9] INFO XmppBot.Common.Bot - going to run after 24 minutes.
+2017-05-14 17:37:11,682 [19] INFO XmppBot.Common.Bot - Message : set reminder-17-tomorrow- test tomorrow - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d602.hipchat.com|5242
+2017-05-14 17:39:41,996 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-14 17:39:42,098 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-14 17:39:42,157 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-14 17:39:42,159 [9] INFO XmppBot.Common.Bot - going to run after 21 minutes.
+2017-05-14 17:39:49,473 [14] INFO XmppBot.Common.Bot - Message : set reminder-17-tomorrow- test tomorrow - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d602.hipchat.com|5242
+2017-05-14 17:41:14,678 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-14 17:41:14,761 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-14 17:41:14,806 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-14 17:41:14,809 [9] INFO XmppBot.Common.Bot - going to run after 19 minutes.
+2017-05-17 09:29:17,061 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-17 09:29:17,170 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-05-17 09:29:17,236 [8] INFO XmppBot.Common.Bot - Connected.
+2017-05-17 09:29:17,238 [8] INFO XmppBot.Common.Bot - going to run after 31 minutes.
+2017-05-17 09:29:33,501 [13] INFO XmppBot.Common.Bot - Message : where is adriaan - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d609.hipchat.com|5262
+2017-05-17 09:30:32,769 [8] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-17 09:30:32,871 [8] INFO XmppBot.Common.Bot - Connecting...
+2017-05-17 09:30:32,906 [8] INFO XmppBot.Common.Bot - Connected.
+2017-05-17 09:30:32,909 [8] INFO XmppBot.Common.Bot - going to run after 30 minutes.
+2017-05-17 09:30:40,923 [10] INFO XmppBot.Common.Bot - Message : where is adriaan - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d609.hipchat.com|5262
+2017-05-17 09:31:26,589 [18] INFO XmppBot.Common.Bot - Message : waar is adriaan? - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d609.hipchat.com|5262
+2017-05-17 10:33:36,259 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-17 10:33:36,369 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-17 10:33:36,424 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-17 10:33:36,428 [10] INFO XmppBot.Common.Bot - going to run after 27 minutes.
+2017-05-17 10:33:55,558 [11] INFO XmppBot.Common.Bot - Message : help person - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d609.hipchat.com|5262
+2017-05-17 10:34:25,827 [11] INFO XmppBot.Common.Bot - Message : help person - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d609.hipchat.com|5262
+2017-05-17 17:46:35,203 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-17 17:46:35,461 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-17 17:46:35,494 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-17 17:46:35,496 [9] INFO XmppBot.Common.Bot - going to run after 14 minutes.
+2017-05-17 17:46:46,267 [10] INFO XmppBot.Common.Bot - Message : /clear\ - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d609.hipchat.com|5262
+2017-05-17 17:47:00,251 [10] INFO XmppBot.Common.Bot - Message : 6-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d609.hipchat.com|5262
+2017-05-17 17:47:42,366 [10] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-17 17:47:42,442 [10] INFO XmppBot.Common.Bot - Connecting...
+2017-05-17 17:47:42,466 [10] INFO XmppBot.Common.Bot - Connected.
+2017-05-17 17:47:42,469 [10] INFO XmppBot.Common.Bot - going to run after 13 minutes.
+2017-05-17 17:47:47,084 [12] INFO XmppBot.Common.Bot - Message : 6-rupesh - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d609.hipchat.com|5262
+2017-05-17 17:48:28,235 [6] INFO XmppBot.Common.Bot - Message : 6-anouk - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d609.hipchat.com|5262
+2017-05-17 17:48:53,925 [11] INFO XmppBot.Common.Bot - Message : 6-Anouk - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d609.hipchat.com|5262
+2017-05-17 17:49:44,842 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-17 17:49:45,036 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-17 17:49:45,074 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-17 17:49:45,077 [9] INFO XmppBot.Common.Bot - going to run after 11 minutes.
+2017-05-17 17:49:50,392 [14] INFO XmppBot.Common.Bot - Message : 6-Anouk - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d609.hipchat.com|5262
+2017-05-17 17:51:12,219 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-17 17:51:12,296 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-17 17:51:12,328 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-17 17:51:12,331 [9] INFO XmppBot.Common.Bot - going to run after 9 minutes.
+2017-05-17 17:51:28,729 [14] INFO XmppBot.Common.Bot - Message : 6- Anouk Anink - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d609.hipchat.com|5262
+2017-05-17 18:12:01,246 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-17 18:12:01,440 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-17 18:12:01,530 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-17 18:12:01,543 [9] INFO XmppBot.Common.Bot - going to run after 48 minutes.
+2017-05-17 18:12:09,843 [14] INFO XmppBot.Common.Bot - Message : 6- Anouk Anink - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d902.hipchat.com|5292
+2017-05-17 18:14:51,889 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-17 18:14:52,079 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-17 18:14:52,254 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-17 18:14:52,275 [9] INFO XmppBot.Common.Bot - going to run after 46 minutes.
+2017-05-17 18:15:05,327 [11] INFO XmppBot.Common.Bot - Message : 6- Anouk Anink. - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d902.hipchat.com|5292
+2017-05-17 18:16:48,451 [9] INFO XmppBot.Common.Bot - Loaded the following plugins
+	XmppBot.Plugins.CountdownTimer
+	XmppBot.Plugins.Example
+	XmppBot.Plugins.Reminder
+	XmppBot.Plugins.WatchFolder
+
+2017-05-17 18:16:48,531 [9] INFO XmppBot.Common.Bot - Connecting...
+2017-05-17 18:16:48,752 [9] INFO XmppBot.Common.Bot - Connected.
+2017-05-17 18:16:48,755 [9] INFO XmppBot.Common.Bot - going to run after 44 minutes.
+2017-05-17 18:17:00,613 [11] INFO XmppBot.Common.Bot - Message : 6- Anouk anink - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d902.hipchat.com|5292
+2017-05-17 18:17:20,287 [10] INFO XmppBot.Common.Bot - Message : 6- Anouk - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d902.hipchat.com|5292
+2017-05-17 18:17:38,542 [11] INFO XmppBot.Common.Bot - Message : 6-anink - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d902.hipchat.com|5292
+2017-05-17 18:18:24,622 [15] INFO XmppBot.Common.Bot - Message : 6-adriaan - from 94767_4717350@chat.hipchat.com/qt_windows||proxy|proxy-d902.hipchat.com|5292

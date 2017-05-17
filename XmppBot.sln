@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmppBot.GoogleApi", "XmppBo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmppBot.GetParsedText", "XmppBot.GetParsedText\XmppBot.GetParsedText.csproj", "{7FC0973A-C72D-4462-8E6F-0182EC5A2D39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmppBot.Log", "XmppBot.Log\XmppBot.Log.csproj", "{41FA4555-36A9-474F-B464-4E547B9059E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -124,6 +126,24 @@ Global
 		{7FC0973A-C72D-4462-8E6F-0182EC5A2D39}.Release64|Mixed Platforms.Build.0 = Release|Any CPU
 		{7FC0973A-C72D-4462-8E6F-0182EC5A2D39}.Release64|x86.ActiveCfg = Release|Any CPU
 		{7FC0973A-C72D-4462-8E6F-0182EC5A2D39}.Release64|x86.Build.0 = Release|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Debug|x86.Build.0 = Debug|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Release|x86.ActiveCfg = Release|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Release|x86.Build.0 = Release|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Release64|Any CPU.ActiveCfg = Release|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Release64|Any CPU.Build.0 = Release|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Release64|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Release64|Mixed Platforms.Build.0 = Release|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Release64|x86.ActiveCfg = Release|Any CPU
+		{41FA4555-36A9-474F-B464-4E547B9059E0}.Release64|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

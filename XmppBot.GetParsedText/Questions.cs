@@ -9,11 +9,43 @@ namespace XmppBot.GetParsedText
 	{
 		public static Dictionary<string, QuestionType> QuestionList;
         public static Dictionary<string, QuestionType> HelpList;
+        public static Dictionary<string, string> MatchingWords;
 
         public Questions()
 		{
 			Questions.QuestionList = Questions.QuestionList ?? this.GetQuestionsList();
             Questions.HelpList = Questions.HelpList ?? this.GetHelpList();
+            Questions.MatchingWords = Questions.MatchingWords ?? this.GetMatchingWords();
+        }
+
+        private Dictionary<string, string> GetMatchingWords()
+        {
+            Dictionary<string, string> matchingWords = new Dictionary<string, string>()
+            {
+                { "today", "today" },
+                { "2day", "today" },
+                { "tody", "today" },
+                { "tday", "today" },
+                { "vandaag", "today" },
+                { "vandag", "today" },
+                { "toda", "today" },
+                { "tomorrow", "tomorrow" },
+                { "tomorow", "tomorrow" },
+                { "2morrow", "tomorrow" },
+                { "tmorrow", "tomorrow" },
+                { "tomorrw", "tomorrow" },
+                { "tmorow", "tomorrow" },
+                { "morgen", "tomorrow" },
+                { "monday", "monday" },
+                { "mnday", "monday" },
+                { "maandag", "monday" },
+                { "mandag", "monday" },
+                { "tuesday", "tuesday" },
+                { "dinsdag", "tuesday" },
+                { "", "no match" }
+
+            };
+            return matchingWords;
         }
 
         private Dictionary<string, QuestionType> GetHelpList()
@@ -27,6 +59,7 @@ namespace XmppBot.GetParsedText
                 { "kamer", QuestionType.RoomHelp },
                 { "free", QuestionType.RoomHelp },
                 { "individual", QuestionType.IndividualHelp },
+                { "person", QuestionType.IndividualHelp },
                 { "find", QuestionType.IndividualHelp },
                 { "calendar", QuestionType.IndividualHelp },
                 { "reminder", QuestionType.ReminderHelp },
@@ -44,7 +77,7 @@ namespace XmppBot.GetParsedText
 		{
 			Dictionary<string, QuestionType> questionsList = new Dictionary<string, QuestionType>()
 			{
-                { "help", QuestionType.CommodityPrice },
+                { "help", QuestionType.Help },
                 { "weather", QuestionType.Weather },
 				{ "wather", QuestionType.Weather },
 				{ "wether", QuestionType.Weather },
@@ -68,7 +101,9 @@ namespace XmppBot.GetParsedText
 				{ "salars", QuestionType.MortgageCalculation },
 				{ "busy", QuestionType.FindIndividualQuery },
 				{ "doing", QuestionType.FindIndividualQuery },
-				{ "busy now", QuestionType.FindIndividualQuery },
+                { "where", QuestionType.FindIndividualQuery },
+                { "waar", QuestionType.FindIndividualQuery },
+                { "busy now", QuestionType.FindIndividualQuery },
 				{ "doing now", QuestionType.FindIndividualQuery },
 				{ "jira issue", QuestionType.JiraIssue },
 				{ "jira issues", QuestionType.JiraIssue },
@@ -88,9 +123,10 @@ namespace XmppBot.GetParsedText
 				{ "vergelijk prijs", QuestionType.CommodityPrice },
 				{ "price ", QuestionType.CommodityPrice },
 				{ "prijs", QuestionType.CommodityPrice },
-				{ "cpmpare ", QuestionType.CommodityPrice }
-				
-                
+				{ "cpmpare ", QuestionType.CommodityPrice },
+                { "help ", QuestionType.Help }
+
+
             };
 			return questionsList;
 		}
@@ -109,7 +145,8 @@ namespace XmppBot.GetParsedText
             Help,
             RoomHelp,
             IndividualHelp,
-            ReminderHelp
+            ReminderHelp,
+            IndividualProfile
 		}
 	}
 }

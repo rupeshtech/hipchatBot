@@ -3,6 +3,7 @@
   <EntityContainer Name="DeptBotEntities" annotation:LazyLoadingEnabled="true">
     <FunctionImport Name="SetNextRunTime" ReturnType="Collection(DeptBotModel.SetNextRunTime_Result)" />
     <EntitySet Name="Reminders" EntityType="DeptBotModel.Reminder" />
+    <EntitySet Name="Depsters" EntityType="DeptBotModel.Depster" />
   </EntityContainer>
   <ComplexType Name="SetNextRunTime_Result">
     <Property Type="Int32" Name="ScheduleId" Nullable="false" />
@@ -20,5 +21,19 @@
     <Property Name="RunDay" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ReminderText" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Depster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Given_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Additional_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Family_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="E_mail_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="E_mail_Value" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Phone_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Phone_Value" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Organization_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
 </Schema>

@@ -1,5 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="DeptBotModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DeptBot.dbo.Depster' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Depster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Given_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Additional_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Family_Name" Type="varchar" MaxLength="50" />
+    <Property Name="E-mail_Type" Type="varchar" MaxLength="50" />
+    <Property Name="E-mail_Value" Type="varchar" MaxLength="50" />
+    <Property Name="Phone_Type" Type="varchar" MaxLength="50" />
+    <Property Name="Phone_Value" Type="varchar" MaxLength="50" />
+    <Property Name="Organization_Name" Type="varchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="Reminder">
     <Key>
       <PropertyRef Name="Id" />
@@ -14,5 +30,18 @@
   <Function Name="SetNextRunTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="DeptBotModelStoreContainer">
     <EntitySet Name="Reminder" EntityType="Self.Reminder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Depster" EntityType="Self.Depster" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Depster].[Id] AS [Id], 
+    [Depster].[Given_Name] AS [Given_Name], 
+    [Depster].[Additional_Name] AS [Additional_Name], 
+    [Depster].[Family_Name] AS [Family_Name], 
+    [Depster].[E-mail_Type] AS [E-mail_Type], 
+    [Depster].[E-mail_Value] AS [E-mail_Value], 
+    [Depster].[Phone_Type] AS [Phone_Type], 
+    [Depster].[Phone_Value] AS [Phone_Value], 
+    [Depster].[Organization_Name] AS [Organization_Name]
+    FROM [dbo].[Depster] AS [Depster]</DefiningQuery>
+    </EntitySet>
   </EntityContainer>
 </Schema>

@@ -1,0 +1,6 @@
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Log\bin\Debug\XmppBot.Log.dll.config
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Log\bin\Debug\XmppBot.Log.dll
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Log\bin\Debug\XmppBot.Log.pdb
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Log\obj\Debug\XmppBot.Log.csprojResolveAssemblyReference.cache
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Log\obj\Debug\XmppBot.Log.dll
+C:\RupeshDev\Bot\hipchatBot\XmppBot.Log\obj\Debug\XmppBot.Log.pdb
